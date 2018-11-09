@@ -1,5 +1,6 @@
 package Com.VSummary.controller;
 
+import Com.VSummary.domain.Summaries;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
