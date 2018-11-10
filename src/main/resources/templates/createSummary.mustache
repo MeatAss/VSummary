@@ -5,11 +5,68 @@
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../static/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+
+    <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+
+    <script>
+        function connect() {
+            socket = new SockJS('/gs-websocket');
+            stompClient = Stomp.over(socket);
+            stompClient.connect({}, function (frame) {
+                stompClient.subscribe('/user/queue/searchData', function(results) {
+                    updateSearchResults(JSON.parse(results.body));
+                });
+            });
+        }
+        $( document ).ready(function () {
+            connect();
+        });
+
+        function updateSearchResults(results) {
+            $(results).each(function(i, result) {
+                console.log(result.message);
+            });
+        }
+
+        function sendData() {
+            spis = [];
+            spis.push($('#nameSummary').val());
+            spis.push($('#shortDescription').val());
+            spis.push($('#specialtyNumber').val());
+            spis.push($('#sumaryTags').val());
+            spis.push($('#textSummary').val());
+
+            $.ajax({
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                url: '/main/addSummary',
+                data: JSON.stringify(spis),
+                success: function(data) {
+                    alert(data);
+                }
+            });
+        }
+
+        function sendSearchData() {
+            stompClient.send("/app/search/update", {}, JSON.stringify({'message' : $('#searchText').val()}));
+        }
+    </script>
 </head>
 <body>
 
+<div class="m-2" style="width: 50%; height: 50%;">
+    <div class="input-group mb-3">
+        <input id="searchText" type="search"  class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="sendSearchData()">Button</button>
+        </div>
+    </div>
+</div>
+
 <div class="mx-auto border p-4 mt-2" style="width: 50%; height: 50%;">
-    <form id="formSummary" method="post">
         <div class="form-group">
             <label for="nameSummary">Название</label>
             <input class="form-control has-error" id="nameSummary" type="text" placeholder="Введите название конспекта" required>
@@ -19,20 +76,19 @@
             <input class="form-control" id="shortDescription" type="text" placeholder="Краткое описание" required>
         </div>
         <div class="form-group">
-            <label for="numberSpecialty">Номер специальности</label>
-            <input class="form-control" id="numberSpecialty" type="text" placeholder="Номер специальности" required>
+            <label for="specialtyNumber">Номер специальности</label>
+            <input class="form-control" id="specialtyNumber" type="text" placeholder="Номер специальности" required>
         </div>
         <div class="form-group">
-            <label for="tagsSumary">Тэги</label>
-            <input class="form-control" id="tagsSumary" type="text" placeholder="Тэги" required>
+            <label for="sumaryTags">Тэги</label>
+            <input class="form-control" id="sumaryTags" type="text" placeholder="Тэги" required>
         </div>
         <div class="form-group">
             <label for="textSummary">Текст</label>
             <textarea class="form-control" id="textSummary" rows="3" required></textarea>
         </div>
 
-        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <button id="submit" class="btn btn-primary" onclick="sendData()">Submit</button>
 </div>
 
 </body>

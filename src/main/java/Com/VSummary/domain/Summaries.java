@@ -1,5 +1,7 @@
 package Com.VSummary.domain;
 
+//import org.springframework.data.elasticsearch.annotations.Document;
+
 import javax.persistence.*;
 
 @Entity
@@ -9,13 +11,23 @@ public class Summaries {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String name;
+    private String nameSummary;
     private String shortDescription;
     private String specialtyNumber;
-    private String tags;
-    private String text;
+    private String sumaryTags;
+
+    @Lob
+    private String textSummary;
 
     public Summaries() {
+    }
+
+    public Summaries(String nameSummary, String shortDescription, String specialtyNumber, String sumaryTags, String textSummary) {
+        this.nameSummary = nameSummary;
+        this.shortDescription = shortDescription;
+        this.specialtyNumber = specialtyNumber;
+        this.sumaryTags = sumaryTags;
+        this.textSummary = textSummary;
     }
 
     public long getId() {
@@ -24,14 +36,6 @@ public class Summaries {
 
     public void setId(long id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getShortDescription() {
@@ -50,19 +54,27 @@ public class Summaries {
         this.specialtyNumber = specialtyNumber;
     }
 
-    public String getTags() {
-        return tags;
+    public String getNameSummary() {
+        return nameSummary;
     }
 
-    public void setTags(String tags) {
-        this.tags = tags;
+    public void setNameSummary(String nameSummary) {
+        this.nameSummary = nameSummary;
     }
 
-    public String getText() {
-        return text;
+    public String getSumaryTags() {
+        return sumaryTags;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setSumaryTags(String sumaryTags) {
+        this.sumaryTags = sumaryTags;
+    }
+
+    public String getTextSummary() {
+        return textSummary;
+    }
+
+    public void setTextSummary(String textSummary) {
+        this.textSummary = textSummary;
     }
 }

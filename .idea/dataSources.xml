@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="VSummaryDB@localhost" uuid="ed709687-db4e-4085-b67e-3f8355a14daa">
+    <data-source source="LOCAL" name="VSummaryDB@localhost" uuid="4d9c5b46-bdb4-47b6-a169-00d9bf15307d">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
