@@ -7,5 +7,4 @@ import java.util.List;
 import java.util.Optional;
 
 public interface SummariesSearchRepository extends ElasticsearchRepository<SummariesSearch, String> {
-    List<SummariesSearch> findAllByNameOrShortDescriptionOrSpecialtyNumberOrText(String s);
 }

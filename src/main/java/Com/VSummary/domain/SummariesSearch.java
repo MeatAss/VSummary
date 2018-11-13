@@ -3,6 +3,7 @@ package Com.VSummary.domain;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.Id;
+import java.util.UUID;
 
 @Document(indexName = "summaries_search", type = "summaries")
 public class SummariesSearch {
@@ -18,12 +19,13 @@ public class SummariesSearch {
     public SummariesSearch() {
     }
 
-    public SummariesSearch(String idSummary, String name, String shortDescription, String specialtyNumber, String text) {
-        this.idSummary = idSummary;
-        this.name = name;
-        this.shortDescription = shortDescription;
-        this.specialtyNumber = specialtyNumber;
-        this.text = text;
+    public SummariesSearch(Summaries summaries) {
+        id = UUID.randomUUID().toString();
+        idSummary = String.valueOf(summaries.getId());
+        name = summaries.getNameSummary();
+        shortDescription = summaries.getShortDescription();
+        specialtyNumber = summaries.getSpecialtyNumber();
+        text = summaries.getTextSummary();
     }
 
     public String getId() {

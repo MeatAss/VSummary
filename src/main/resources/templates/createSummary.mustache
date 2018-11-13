@@ -10,7 +10,19 @@
 
     <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
 
+    <style>
+        #tagsUL > li:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
+
     <script>
+        $( document ).ready(function () {
+            connect();
+            $('#sumaryTags').on('input', function(){ sendTag(this); });
+            $(document).on('click', function(){ $('#tagsUL').addClass('invisible'); });
+        });
+
         function connect() {
             socket = new SockJS('/gs-websocket');
             stompClient = Stomp.over(socket);
@@ -18,11 +30,31 @@
                 stompClient.subscribe('/user/queue/searchData', function(results) {
                     updateSearchResults(JSON.parse(results.body));
                 });
+                stompClient.subscribe('/user/queue/updateTags', function(results) {
+                    updateTags(JSON.parse(results.body));
+                });
             });
         }
-        $( document ).ready(function () {
-            connect();
-        });
+
+        function updateTags(results) {
+            $('#tagsUL').empty();
+
+            $(results).each(function(i, result) {
+                $('#tagsUL').append(
+                    $('<li></li>')
+                        .addClass('nav-item')
+                        .on('click', function(){
+                            textVal = $('#sumaryTags').val();
+                            textVal = textVal.slice(0, textVal.length - getLastWord($('#sumaryTags')).length) + $(this).text();
+                            $('#sumaryTags').val(textVal);
+                            $('#tagsUL').addClass('invisible');
+                        })
+                        .text(result.message)
+                );
+            });
+
+            $('#tagsUL').removeClass('invisible');
+        }
 
         function updateSearchResults(results) {
             $(results).each(function(i, result) {
@@ -30,13 +62,22 @@
             });
         }
 
+        function sendTag(elem) {
+            stompClient.send("/app/tags/update", {}, JSON.stringify({'message' : getLastWord(elem)}));
+        }
+
+        function getLastWord(elem) {
+            return  $(elem).val().slice(($(elem).val().lastIndexOf(" ")) + 1);
+        }
+
         function sendData() {
-            spis = [];
-            spis.push($('#nameSummary').val());
-            spis.push($('#shortDescription').val());
-            spis.push($('#specialtyNumber').val());
-            spis.push($('#sumaryTags').val());
-            spis.push($('#textSummary').val());
+            spis = {
+                "nameSummary" : $('#nameSummary').val(),
+                "shortDescription" : $('#shortDescription').val(),
+                "specialtyNumber" : $('#specialtyNumber').val(),
+                "sumaryTags" : $('#sumaryTags').val(),
+                "textSummary" : $('#textSummary').val()
+            };
 
             $.ajax({
                 type: 'POST',
@@ -79,13 +120,15 @@
             <label for="specialtyNumber">Номер специальности</label>
             <input class="form-control" id="specialtyNumber" type="text" placeholder="Номер специальности" required>
         </div>
-        <div class="form-group">
+        <div class="form-group position-relative">
             <label for="sumaryTags">Тэги</label>
             <input class="form-control" id="sumaryTags" type="text" placeholder="Тэги" required>
+            <ul id="tagsUL" class="position-absolute border nav flex-column bg-light invisible" style="z-index: 999; width: 100%">
+            </ul>
         </div>
         <div class="form-group">
             <label for="textSummary">Текст</label>
-            <textarea class="form-control" id="textSummary" rows="3" required></textarea>
+            <textarea class="form-control" id="textSummary" rows="10" required></textarea>
         </div>
 
         <button id="submit" class="btn btn-primary" onclick="sendData()">Submit</button>
