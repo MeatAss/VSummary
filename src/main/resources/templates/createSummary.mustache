@@ -11,112 +11,15 @@
 
     <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
     <script src="../static/js/markdown.min.js"></script>
+    <script src="../static/js/createSummaryWebService.js"></script>
+    <script src="../static/js/createSummaryApp.js"></script>
+    <script src="../static/js/createSummaryDragAndDrop.js"></script>
 
     <style>
         #tagsUL > li:hover {
             background-color: #e6e6e6;
         }
     </style>
-
-    <script>
-        $( document ).ready(function () {
-            connect();
-            $('#sumaryTags').on('input', function(){ sendTag(this); });
-            $(document).on('click', function(){ $('#tagsUL').addClass('invisible'); });
-        });
-
-        function connect() {
-            socket = new SockJS('/gs-websocket');
-            stompClient = Stomp.over(socket);
-            stompClient.connect({}, function (frame) {
-                stompClient.subscribe('/user/queue/searchData', function(results) {
-                    updateSearchResults(JSON.parse(results.body));
-                });
-                stompClient.subscribe('/user/queue/updateTags', function(results) {
-                    updateTags(JSON.parse(results.body));
-                });
-            });
-        }
-
-        function updateTags(results) {
-            $('#tagsUL').empty();
-
-            $(results).each(function(i, result) {
-                $('#tagsUL').append(
-                    $('<li></li>')
-                        .addClass('nav-item')
-                        .on('click', function(){
-                            textVal = $('#sumaryTags').val();
-                            textVal = textVal.slice(0, textVal.length - getLastWord($('#sumaryTags')).length) + $(this).text();
-                            $('#sumaryTags').val(textVal);
-                            $('#tagsUL').addClass('invisible');
-                        })
-                        .text(result.message)
-                );
-            });
-
-            $('#tagsUL').removeClass('invisible');
-        }
-
-        function updateSearchResults(results) {
-            $(results).each(function(i, result) {
-                console.log(result.message);
-            });
-        }
-
-        function sendTag(elem) {
-            stompClient.send("/app/tags/update", {}, JSON.stringify({'message' : getLastWord(elem)}));
-        }
-
-        function getLastWord(elem) {
-            return  $(elem).val().slice(($(elem).val().lastIndexOf(" ")) + 1);
-        }
-
-        function sendData() {
-            spis = {
-                "nameSummary" : $('#nameSummary').val(),
-                "shortDescription" : $('#shortDescription').val(),
-                "specialtyNumber" : $('#specialtyNumber').val(),
-                "sumaryTags" : $('#sumaryTags').val(),
-                "textSummary" : $('#textSummary').val()
-            };
-
-            $.ajax({
-                type: 'POST',
-                dataType: 'json',
-                contentType: 'application/json',
-                url: '/main/addSummary',
-                data: JSON.stringify(spis),
-                success: function(data) {
-                    alert(data);
-                }
-            });
-        }
-
-        function sendSearchData() {
-            stompClient.send("/app/search/update", {}, JSON.stringify({'message' : $('#searchText').val()}));
-        }
-
-        function markdownClick(elem) {
-            isCheck = $(elem).hasClass('text-info');
-            textSummary = $('#textSummary');
-
-            if (isCheck) {
-                $(elem).removeClass('text-info');
-                $(elem).addClass('text-secondary');
-                textSummary.addClass('invisible position-absolute');
-                $('#divTextId').append($($('<div></div>')
-                    .attr('id', 'markdownDiv'))
-                    .html(markdown.toHTML(textSummary.val()))
-                );
-            } else {
-                $(elem).removeClass('text-secondary');
-                $(elem).addClass('text-info');
-                $('#markdownDiv').remove();
-                textSummary.removeClass('invisible position-absolute');
-            }
-        }
-    </script>
 </head>
 <body>
 
@@ -132,21 +35,22 @@
 </div>
 
 <div class="mx-auto border p-4 mt-2" style="width: 50%; height: 50%;">
+    <form id="addSummaryForm">
         <div class="form-group">
             <label for="nameSummary">Название</label>
-            <input class="form-control has-error" id="nameSummary" type="text" placeholder="Введите название конспекта" required>
+            <input class="form-control has-error" id="nameSummary" type="text" placeholder="Введите название конспекта" required maxlength="100">
         </div>
         <div class="form-group">
             <label for="shortDescription">Краткое описание</label>
-            <input class="form-control" id="shortDescription" type="text" placeholder="Краткое описание" required>
+            <input class="form-control" id="shortDescription" type="text" placeholder="Краткое описание" required maxlength="200">
         </div>
         <div class="form-group">
             <label for="specialtyNumber">Номер специальности</label>
-            <input class="form-control" id="specialtyNumber" type="text" placeholder="Номер специальности" required>
+            <input class="form-control" id="specialtyNumber" type="text" placeholder="Номер специальности" required maxlength="50">
         </div>
         <div class="form-group position-relative">
             <label for="sumaryTags">Тэги</label>
-            <input class="form-control" id="sumaryTags" type="text" placeholder="Тэги" required>
+            <input class="form-control" id="sumaryTags" type="text" placeholder="Тэги" required maxlength="200">
             <ul id="tagsUL" class="position-absolute border nav flex-column bg-light invisible" style="z-index: 999; width: 100%">
             </ul>
         </div>
@@ -155,10 +59,15 @@
                 <label for="textSummary">Текст</label>
                 <i class="fab fa-markdown fa-2x float-right text-info" onclick="markdownClick(this)"></i>
             </div>
-            <textarea class="form-control" id="textSummary" rows="10" required></textarea>
+
+            <textarea class="form-control" id="textSummary" rows="10" required minlength="25" maxlength="1000"></textarea>
+            <form method="POST" enctype="multipart/form-data" id="fileUploadForm">
+
+            </form>
         </div>
 
         <button id="submit" class="btn btn-primary" onclick="sendData()">Submit</button>
+    </form>
 </div>
 
 </body>

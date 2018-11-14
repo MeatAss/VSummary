@@ -63,13 +63,6 @@
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
 
-
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.data</groupId>-->
-            <!--<artifactId>spring-data-elasticsearch</artifactId>-->
-            <!--<version>3.0.8.RELEASE</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
@@ -86,12 +79,35 @@
             <artifactId>transport</artifactId>
             <version>6.4.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.6</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.integration</groupId>-->
+            <!--<artifactId>spring-integration-ftp</artifactId>-->
+            <!--<version>5.1.0.RELEASE</version>-->
+        <!--</dependency>-->
     </dependencies>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>projectlombok.org</id>
+            <url>http://projectlombok.org/mavenrepo</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>

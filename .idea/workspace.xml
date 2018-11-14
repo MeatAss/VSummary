@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="b6c21cec-9b83-4f22-a896-7ba9bfd0d06e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/VSummaryElasticsearchConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/config/VSummaryElasticsearchConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/Summaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/Summaries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/createSummary.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/createSummary.mustache" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +59,7 @@
     <session id="-251275044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.30" value="1" />
@@ -66,88 +74,116 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="33" />
+          <entry key="class" value="6" />
+          <entry key="hibernate_sequence" value="1" />
+          <entry key="java" value="38" />
+          <entry key="js" value="6" />
           <entry key="mustache" value="2" />
-          <entry key="properties" value="4" />
+          <entry key="properties" value="6" />
           <entry key="sql" value="1" />
-          <entry key="summaries" value="6" />
+          <entry key="summaries" value="7" />
           <entry key="summary_tags" value="1" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="Database Element" value="7" />
+          <entry key="CLASS" value="6" />
+          <entry key="Database Element" value="9" />
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="33" />
-          <entry key="Properties" value="4" />
+          <entry key="JAVA" value="38" />
+          <entry key="JavaScript" value="6" />
+          <entry key="Properties" value="6" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cell" value="28" />
-          <entry key="dummy" value="31" />
-          <entry key="java" value="2329" />
-          <entry key="mustache" value="1967" />
-          <entry key="properties" value="5" />
+          <entry key="dummy" value="32" />
+          <entry key="java" value="2490" />
+          <entry key="js" value="364" />
+          <entry key="mustache" value="2275" />
+          <entry key="properties" value="23" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="11" />
+          <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1967" />
-          <entry key="JAVA" value="2329" />
-          <entry key="PLAIN_TEXT" value="44" />
-          <entry key="Properties" value="5" />
+          <entry key="HTML" value="2275" />
+          <entry key="JAVA" value="2490" />
+          <entry key="JavaScript" value="364" />
+          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="Properties" value="23" />
           <entry key="Scratch" value="28" />
-          <entry key="XML" value="11" />
+          <entry key="XML" value="14" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1356867746">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.74" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.96" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="542" />
+          <entry key="js" value="156" />
+          <entry key="properties" value="139" />
+          <entry key="xml" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="542" />
+          <entry key="JavaScript" value="156" />
+          <entry key="Properties" value="139" />
+          <entry key="XML" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="7" />
+          <entry key="JavaScript" value="1" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="7" />
+          <entry key="js" value="1" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="124" column="85" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
+            <state relative-caret-position="225">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#970#983#1" expanded="true" />
+                <element signature="e#1025#1038#1" expanded="true" />
+                <element signature="e#1077#1091#1" expanded="true" />
+                <element signature="e#1134#1151#1" expanded="true" />
+                <element signature="e#1197#1222#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,20 +192,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="30" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="119">
+              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="714">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -180,6 +234,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -190,6 +245,8 @@
       <find>clustername</find>
       <find>elasticsearch.host</find>
       <find>spring-data-elasticsearch</find>
+      <find>stompClient</find>
+      <find>spring-boot-starter-web</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,22 +258,29 @@
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/VSummaryElasticsearchConfiguration.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsSearchRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/TestSummaryTags.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TestTagsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummaryTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTagBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryWebService.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MainWebAppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/FormMultipart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/FtpConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
       </list>
     </option>
   </component>
@@ -240,8 +304,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="13" />
-    <option name="y" value="-26" />
+    <option name="x" value="-43" />
+    <option name="y" value="-15" />
     <option name="width" value="1216" />
     <option name="height" value="688" />
   </component>
@@ -251,7 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,6 +347,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
@@ -367,6 +439,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,7 +451,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542121464913" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542204923475" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -386,7 +459,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -440,12 +513,16 @@
       <workItem from="1541857951714" duration="7096000" />
       <workItem from="1542090493244" duration="13429000" />
       <workItem from="1542104171611" duration="596000" />
-      <workItem from="1542115667944" duration="5745000" />
+      <workItem from="1542115667944" duration="18835000" />
+      <workItem from="1542186079059" duration="5537000" />
+      <workItem from="1542194059575" duration="2269000" />
+      <workItem from="1542196518221" duration="499000" />
+      <workItem from="1542198192475" duration="6198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52641000" />
+    <option name="totallyTimeSpent" value="80264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,10 +534,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1381" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27132195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28917485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -473,13 +550,13 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" visible="true" weight="0.40130153" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.40130153" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -489,7 +566,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" weight="0.119936034" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -505,68 +582,66 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="summaries.getId()" language="JAVA" />
+        <watch expression="ftpPath" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>summaries.getId()</expression-string>
+        <expression-string>ftpPath</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>suggestResponse.getSuggest()</expression-string>
+        <expression-string>ftpPassword</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>simpleMessages</expression-string>
+        <expression-string>ftpLogin</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>message.getMessage()</expression-string>
+        <expression-string>files[0].getInputStream()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>results</expression-string>
+        <expression-string>&quot;7.jpg&quot;.matches(&quot;([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>summariesData.get(4).length()</expression-string>
+        <expression-string>&quot;7.doc&quot;.matches(&quot;([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>summariesData.get(4)</expression-string>
+        <expression-string>files[0].getOriginalFilename().matches(&quot;([^\\s]+(\\.(?i)(jpg|png|gif|bmp))$)&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>summariesData.get(4).size()</expression-string>
+        <expression-string>files[0].getOriginalFilename()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>summariesData</expression-string>
+        <expression-string>files[0]</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>asd.get()</expression-string>
+        <expression-string>files[0].getName()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d9c5b46-bdb4-47b6-a169-00d9bf15307d/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d9c5b46-bdb4-47b6-a169-00d9bf15307d/console.sql" />
     <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summary_tags" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.6.11/elasticsearch-5.6.11.jar!/org/elasticsearch/client/transport/TransportClient.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -576,32 +651,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsSearchRepository.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="83" column="8" lean-forward="true" selection-start-line="83" selection-start-column="8" selection-end-line="87" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TestTagsRepository.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/VSummaryElasticsearchConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -654,10 +708,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+        <state relative-caret-position="-17">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="42" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -668,45 +729,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java">
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/hibernate_sequence" />
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="317">
+          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/core/io/InputStreamSource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/FormMultipart.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/MainWebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryWebService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/FtpConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="52" />
+        <state relative-caret-position="119">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="124" column="85" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
+        <state relative-caret-position="225">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#970#983#1" expanded="true" />
+            <element signature="e#1025#1038#1" expanded="true" />
+            <element signature="e#1077#1091#1" expanded="true" />
+            <element signature="e#1134#1151#1" expanded="true" />
+            <element signature="e#1197#1222#1" expanded="true" />
           </folding>
         </state>
       </provider>

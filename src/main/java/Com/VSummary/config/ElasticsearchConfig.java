@@ -16,7 +16,7 @@ import java.net.InetAddress;
 
 @Configuration
 @EnableElasticsearchRepositories(basePackages = "Com.VSummary.repository")
-public class VSummaryElasticsearchConfiguration {
+public class ElasticsearchConfig {
 
     @Value("${elasticsearch.host}")
     private String EsHost;
