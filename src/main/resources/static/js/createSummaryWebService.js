@@ -1,3 +1,5 @@
+var userName = "";
+
 $( document ).ready(function () {
     connect();
 });
@@ -12,6 +14,11 @@ function connect() {
         stompClient.subscribe('/user/queue/updateTags', function(results) {
             updateTags(JSON.parse(results.body));
         });
+        stompClient.subscribe('/user/queue/fileLoaded', function(results) {
+            dropLoadInimate(JSON.parse(results.body).message);
+        });
+
+        userName = frame.headers['user-name'];
     });
 }
 

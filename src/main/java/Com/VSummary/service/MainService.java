@@ -10,15 +10,23 @@ import org.elasticsearch.search.suggest.SuggestBuilder;
 import org.elasticsearch.search.suggest.SuggestBuilders;
 import org.elasticsearch.search.suggest.SuggestionBuilder;
 import org.elasticsearch.search.suggest.completion.CompletionSuggestion;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.Page;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.data.elasticsearch.core.query.SearchQuery;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -26,6 +34,9 @@ import java.util.List;
 import static org.elasticsearch.index.query.QueryBuilders.multiMatchQuery;
 
 @Service
+@Configuration
+@ComponentScan
+@EnableAsync
 public class MainService {
     @Autowired
     private SummariesRepository summariesRepository;
@@ -35,6 +46,9 @@ public class MainService {
     private SimpMessagingTemplate simpMessagingTemplate;
     @Autowired
     private ElasticsearchTemplate elasticsearchTemplate;
+
+    @Autowired
+    private AsuncDownloaderFTP asuncDownloaderFTP;
 
     public String writeSummary(Summaries summaries) {
         summariesRepository.save(summaries);
@@ -101,5 +115,30 @@ public class MainService {
         results.forEach(result -> simpleMessages.add(new SimpleMessage(result.getName())));
 
         simpMessagingTemplate.convertAndSendToUser(username, "queue/searchData", simpleMessages);
+    }
+
+    public ResponseEntity<String> loadFilesToServer(MultipartFile[] files, String[] idFiles, String username) {
+        List<MultipartFileBuffer> multipartFileBuffers = new ArrayList<>();
+        List<JSONImageData> jsonImageData = new ArrayList<>();
+
+        for (int i = 0; i < files.length; i++) {
+            try {
+                multipartFileBuffers.add(new MultipartFileBuffer(
+                        idFiles[i],
+                        files[i].getOriginalFilename(),
+                        files[i].getInputStream())
+                );
+
+                jsonImageData.add(new JSONImageData(
+                        idFiles[i],
+                        AsuncDownloaderFTP.fullPath + multipartFileBuffers.get(i).getName()
+                ));
+            } catch (IOException e) {
+                //ERROR GETING FILE
+            }
+        }
+
+        asuncDownloaderFTP.asuncLoadFiles(multipartFileBuffers, username);
+        return new ResponseEntity<>(new JSONObject().put("files", jsonImageData).toString(), HttpStatus.OK);
     }
 }
