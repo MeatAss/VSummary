@@ -1,5 +1,6 @@
 package Com.VSummary.domain;
 
+import Com.VSummary.domain.entities.Summaries;
 import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.Id;

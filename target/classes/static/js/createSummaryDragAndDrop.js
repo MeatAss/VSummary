@@ -124,7 +124,6 @@ function sendAjax(data) {
 
 function startLoadImg(files) {
     $(files).each((i, file) => {
-        // $('#' + file.id).attr("value", '![](' + file.fullPath + ')');
         imgItem = $('#' + file.id);
         imgItem.attr('value', file.fullPath);
         imgItem.attr('servername', file.name);

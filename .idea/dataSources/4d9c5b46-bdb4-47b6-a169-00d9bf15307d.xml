@@ -1122,59 +1122,107 @@
     <table id="282" parent="8" name="summary_tags">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="283" parent="280" name="next_val">
+    <table id="283" parent="8" name="user_role">
+      <Engine>MyISAM</Engine>
+    </table>
+    <table id="284" parent="8" name="users">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="285" parent="280" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="281" name="id">
+    <column id="286" parent="281" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="281" name="name_summary">
+    <column id="287" parent="281" name="name_summary">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="286" parent="281" name="short_description">
+    <column id="288" parent="281" name="short_description">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="287" parent="281" name="specialty_number">
+    <column id="289" parent="281" name="specialty_number">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="288" parent="281" name="sumary_tags">
+    <column id="290" parent="281" name="sumary_tags">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="289" parent="281" name="text_summary">
+    <column id="291" parent="281" name="text_summary">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="290" parent="281" name="PRIMARY">
+    <key id="292" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="291" parent="282" name="id">
+    <column id="293" parent="282" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="292" parent="282" name="tag">
+    <column id="294" parent="282" name="tag">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="293" parent="282" name="PRIMARY">
+    <key id="295" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="296" parent="283" name="user_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="297" parent="283" name="roles">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="298" parent="283" name="FKj345gk1bovqvfame88rcx7yyx">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <column id="299" parent="284" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="300" parent="284" name="active">
+      <Position>2</Position>
+      <DataType>bit(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="301" parent="284" name="password">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="302" parent="284" name="username">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="303" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

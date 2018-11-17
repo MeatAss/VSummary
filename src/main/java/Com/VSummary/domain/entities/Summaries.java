@@ -1,4 +1,4 @@
-package Com.VSummary.domain;
+package Com.VSummary.domain.entities;
 
 //import org.springframework.data.elasticsearch.annotations.Document;
 

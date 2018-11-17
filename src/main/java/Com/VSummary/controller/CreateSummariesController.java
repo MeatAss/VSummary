@@ -1,8 +1,8 @@
 package Com.VSummary.controller;
 
 import Com.VSummary.domain.SimpleMessage;
-import Com.VSummary.domain.Summaries;
-import Com.VSummary.service.MainService;
+import Com.VSummary.domain.entities.Summaries;
+import Com.VSummary.service.CreateSummariesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +15,10 @@ import java.security.Principal;
 import java.util.Map;
 
 @Controller
-public class MainController {
+public class CreateSummariesController {
 
     @Autowired
-    private MainService mainService;
+    private CreateSummariesService createSummariesService;
 
     @Autowired
     private ElasticsearchTemplate elasticsearchTemplate;
@@ -50,17 +50,17 @@ public class MainController {
     @PostMapping("/main/addSummary")
     @ResponseBody
     public String addSummary(@RequestBody Summaries summaries, Map<String, Object> model) {
-        return mainService.writeSummary(summaries);
+        return createSummariesService.writeSummary(summaries);
     }
 
     @MessageMapping("/search/update")
     public void searchName(Principal principal, SimpleMessage message) throws Exception {
-        mainService.sendSearchName(message.getMessage(), principal.getName());
+        createSummariesService.sendSearchName(message.getMessage(), principal.getName());
     }
 
     @MessageMapping("/tags/update")
     public void searchTags(Principal principal, SimpleMessage message) throws Exception {
-        mainService.sendTags(message.getMessage(), principal.getName());
+        createSummariesService.sendTags(message.getMessage(), principal.getName());
     }
 
     @PostMapping(
@@ -71,11 +71,11 @@ public class MainController {
             @RequestParam("files") MultipartFile[] files,
             @RequestParam("idFiles") String[] idFiles,
             @RequestParam("username") String username) {
-        return mainService.loadFilesToServer(files, idFiles, username);
+        return createSummariesService.loadFilesToServer(files, idFiles, username);
     }
 
     @MessageMapping("/main/deleteImg")
     public void deleteFile(SimpleMessage message) {
-        mainService.deleteFileOfServer(message.getMessage());
+        createSummariesService.deleteFileOfServer(message.getMessage());
     }
 }

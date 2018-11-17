@@ -1,6 +1,7 @@
 package Com.VSummary.service;
 
 import Com.VSummary.domain.*;
+import Com.VSummary.domain.entities.Summaries;
 import Com.VSummary.repository.SummariesRepository;
 import Com.VSummary.repository.SummariesSearchRepository;
 import org.elasticsearch.action.search.SearchResponse;
@@ -37,7 +38,7 @@ import static org.elasticsearch.index.query.QueryBuilders.multiMatchQuery;
 @Configuration
 @ComponentScan
 @EnableAsync
-public class MainService {
+public class CreateSummariesService {
     @Autowired
     private SummariesRepository summariesRepository;
     @Autowired
