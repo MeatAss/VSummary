@@ -35,34 +35,80 @@ public class AsuncDownloaderFTP {
     private SimpMessagingTemplate simpMessagingTemplate;
 
     @Async
+    public void asuncDeleteFile(String filePath) {
+        FTPClient client = new FTPClient();
+
+        if (!openConnection(client) & !configureConnection(client))
+            return; // not connection
+
+        deleteFile(client, filePath);
+        closeConnection(client);
+    }
+
+    @Async
     public void asuncLoadFiles(List<MultipartFileBuffer> files, String username) {
         FTPClient client = new FTPClient();
-        try {
-            client.connect(ftpHost, ftpPort);
-            if (!client.login(ftpLogin, ftpPassword))
+
+            if (!(openConnection(client)) & !(configureConnection(client)))
                 return; // not connection
 
+            for (MultipartFileBuffer file : files) {
+                if (addFile(client, file))
+                    simpMessagingTemplate.convertAndSendToUser(username, "queue/fileLoaded", new SimpleMessage(file.getId()));
+                else
+                    simpMessagingTemplate.convertAndSendToUser(username, "queue/fileError", new SimpleMessage(file.getId()));
+            }
+
+            closeConnection(client);
+    }
+
+    private boolean openConnection(FTPClient client) {
+        try {
+            client.connect(ftpHost, ftpPort);
+            return client.login(ftpLogin, ftpPassword);
+        } catch (IOException e) {
+            closeConnection(client);
+            return false;
+        }
+    }
+
+    private boolean configureConnection(FTPClient client) {
+        try {
             client.enterLocalPassiveMode();
             client.setFileType(FTP.BINARY_FILE_TYPE);
             client.changeWorkingDirectory(ftpPath);
-
-            for (MultipartFileBuffer file : files) {
-                client.storeFile(file.getName(), file.getInputStream());
-                simpMessagingTemplate.convertAndSendToUser(username, "queue/fileLoaded", new SimpleMessage(file.getId()));
-            }
-
-            client.logout();
-            client.disconnect();
+            return true;
         } catch (IOException e) {
-            //FTP ERROR
-        } finally {
+            closeConnection(client);
+            return false;
+        }
+    }
+
+    private boolean closeConnection(FTPClient client) {
+        try {
             if (client.isConnected()) {
-                try {
-                    client.disconnect();
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+                client.logout();
+                client.disconnect();
             }
+            return true;
+        } catch (IOException e) {
+            return false;
+        }
+    }
+
+    private boolean deleteFile(FTPClient client, String filePath) {
+        try {
+            return client.deleteFile(filePath);
+        } catch (IOException e) {
+            return false;
+        }
+    }
+
+    private boolean addFile(FTPClient client, MultipartFileBuffer file) {
+        try {
+            return client.storeFile(file.getName(), file.getInputStream());
+        } catch (IOException e) {
+            return false;
         }
     }
 }

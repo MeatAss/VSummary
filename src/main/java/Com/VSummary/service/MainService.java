@@ -117,6 +117,10 @@ public class MainService {
         simpMessagingTemplate.convertAndSendToUser(username, "queue/searchData", simpleMessages);
     }
 
+    public void deleteFileOfServer(String filePath) {
+        asuncDownloaderFTP.asuncDeleteFile(filePath);
+    }
+
     public ResponseEntity<String> loadFilesToServer(MultipartFile[] files, String[] idFiles, String username) {
         List<MultipartFileBuffer> multipartFileBuffers = new ArrayList<>();
         List<JSONImageData> jsonImageData = new ArrayList<>();
@@ -131,7 +135,8 @@ public class MainService {
 
                 jsonImageData.add(new JSONImageData(
                         idFiles[i],
-                        AsuncDownloaderFTP.fullPath + multipartFileBuffers.get(i).getName()
+                        AsuncDownloaderFTP.fullPath + multipartFileBuffers.get(i).getName(),
+                        multipartFileBuffers.get(i).getName()
                 ));
             } catch (IOException e) {
                 //ERROR GETING FILE

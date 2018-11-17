@@ -2,15 +2,15 @@ const maxFileSize = 3 * 1024 * 1024;
 var lastImageId = 0;
 
 $(document).ready(function() {
-    dropZone = $('#textSummary');
+    dropZone = $('#divTextId');
     //fileForm = $('#fileUploadForm');
 
-    dropZone[0].ondragover = function() {
+    dropZone[0].ondragover = function(event) {
         //dropZone.addClass('hover');
         return false;
     };
 
-    dropZone[0].ondragleave = function() {
+    dropZone[0].ondragleave = function(event) {
         //dropZone.removeClass('hover');
         return false;
     };
@@ -23,16 +23,18 @@ function onDropAction(event) {
     // dropZone.removeClass('hover');
     // dropZone.addClass('drop');
 
-    files = filterFile(event.dataTransfer.files);
+    if (event.dataTransfer.files.length > 0)
+        dropActionFile(event.dataTransfer.files);
+}
 
-    if (files.length === 0)
-        return;
+function dropActionFile(allFiles) {
+    filtredFiles = filterFile(allFiles);
 
-    idFiles = createFilesIcons(files);
+    idFiles = createFilesIcons(filtredFiles);
 
     data = new FormData();
     data.append('username', userName);
-    jQuery.each(files, function(i, file) {
+    jQuery.each(filtredFiles, function(i, file) {
         data.append('files', file);
         data.append('idFiles', idFiles[i]);
     });
@@ -62,6 +64,9 @@ function createFileIcon(file) {
     img.addClass('img-fluid h-100');
     img.attr('id', 'imageLoader' + lastImageId++);
     img.attr('title', file.name);
+    img[0].ondragstart = (event) => {
+        event.dataTransfer.setData("text", '![](' + img.attr('value') + ')');
+    };
 
     reader = new FileReader();
     reader.onload = function(event) {
@@ -119,7 +124,27 @@ function sendAjax(data) {
 
 function startLoadImg(files) {
     $(files).each((i, file) => {
-        $('#' + file.id).attr("value", file.fullPath);
+        imgItem = $('#' + file.id);
+        imgItem.attr('value', file.fullPath);
+        imgItem.attr('servername', file.name);
+        imgItem.parent().append(
+            $('<div></div>')
+                .addClass('align-top position-absolute')
+                .attr('title', 'Удалить')
+                .css('background-color', 'rgba(0,0,0,0.6)')
+                .css('top', '0')
+                .css('right', '0')
+                .append(
+                    $('<i></i>')
+                        .addClass('far fa-times-circle text-white')
+                        .attr('value', file.id)
+                        .on('click', (elem) => {
+                            img = $('#' + $(elem.currentTarget).attr('value'));
+                            sendToServer('/app/main/deleteImg', img.attr('servername'));
+                            img.parent().remove();
+                        })
+                )
+        )
     });
 }
 

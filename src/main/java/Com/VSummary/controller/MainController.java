@@ -73,4 +73,9 @@ public class MainController {
             @RequestParam("username") String username) {
         return mainService.loadFilesToServer(files, idFiles, username);
     }
+
+    @MessageMapping("/main/deleteImg")
+    public void deleteFile(SimpleMessage message) {
+        mainService.deleteFileOfServer(message.getMessage());
+    }
 }
