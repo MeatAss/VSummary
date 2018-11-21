@@ -1,9 +1,9 @@
-package Com.VSummary.domain.entities;
+package Com.VSummary.domain.enums;
 
 import org.springframework.security.core.GrantedAuthority;
 
 public enum Role implements GrantedAuthority {
-    USER, ADMIN;
+    USER, ADMINISTRATOR;
 
     @Override
     public String getAuthority() {

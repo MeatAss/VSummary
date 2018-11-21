@@ -4,7 +4,6 @@ import Com.VSummary.domain.SimpleMessage;
 import Com.VSummary.domain.entities.Summaries;
 import Com.VSummary.service.CreateSummariesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.stereotype.Controller;
@@ -20,34 +19,7 @@ public class CreateSummariesController {
     @Autowired
     private CreateSummariesService createSummariesService;
 
-    @Autowired
-    private ElasticsearchTemplate elasticsearchTemplate;
-
-    @GetMapping("/main")
-    public String main(Map<String, Object> model){
-        /////////////CREATE SUMMARIES TAGS////////////
-//        elasticsearchTemplate.deleteIndex(SummarySearchTag.class);
-//        elasticsearchTemplate.createIndex(SummarySearchTag.class);
-//        elasticsearchTemplate.refresh(SummarySearchTag.class);
-//        elasticsearchTemplate.putMapping(SummarySearchTag.class);
-//
-//        List<IndexQuery> indexQueries = new ArrayList<>();
-//        indexQueries.add(new SummarySearchTagBuilder("1").name("конспект").suggest(new String[]{"конспект"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("2").name("тетрадь").suggest(new String[]{"тетрадь"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("3").name("контрольная").suggest(new String[]{"контрольная"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("4").name("конверт").suggest(new String[]{"конверт"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("5").name("коньюнкция").suggest(new String[]{"коньюнкция"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("6").name("контакт").suggest(new String[]{"контакт"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("7").name("конституция").suggest(new String[]{"конституция"}).buildIndex());
-//        indexQueries.add(new SummarySearchTagBuilder("8").name("конон").suggest(new String[]{"конон"}).buildIndex());
-//
-//        elasticsearchTemplate.bulkIndex(indexQueries);
-//        elasticsearchTemplate.refresh(SummarySearchTag.class);
-        /////////////////////////////////////////////
-        return "createSummary";
-    }
-
-    @PostMapping("/main/addSummary")
+    @PostMapping("/createSummary/addSummary")
     @ResponseBody
     public String addSummary(@RequestBody Summaries summaries, Map<String, Object> model) {
         return createSummariesService.writeSummary(summaries);
@@ -74,7 +46,7 @@ public class CreateSummariesController {
         return createSummariesService.loadFilesToServer(files, idFiles, username);
     }
 
-    @MessageMapping("/main/deleteImg")
+    @MessageMapping("/createSummary/deleteImg")
     public void deleteFile(SimpleMessage message) {
         createSummariesService.deleteFileOfServer(message.getMessage());
     }

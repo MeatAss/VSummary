@@ -1,20 +1,13 @@
 package Com.VSummary.domain.entities;
 
-//import org.springframework.data.elasticsearch.annotations.Document;
-
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "summaries")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Summaries implements Serializable {

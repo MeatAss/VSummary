@@ -57,7 +57,7 @@ function sendData() {
         type: 'POST',
         dataType: 'json',
         contentType: 'application/json',
-        url: '/main/addSummary',
+        url: '/createSummary/addSummary',
         data: JSON.stringify(spis),
         success: function(data) {
             alert(data);

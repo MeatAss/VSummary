@@ -5,19 +5,45 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d9c5b46-bdb4-47b6-a169-00d9bf15307d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d9c5b46-bdb4-47b6-a169-00d9bf15307d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CustomHandshakeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CustomHandshakeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/enums/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Summaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Summaries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.insertAtCaret.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/config/MvcConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/CreateSummariesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/CreateSummariesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/CustomHandshakeHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/CustomHandshakeHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SimpleMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SimpleMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummariesSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummariesSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummarySearchTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummarySearchTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/Summaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/Summaries.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/AuthenticationService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/createSummaryApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/createSummaryApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/jquery.insertAtCaret.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/createSummary.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,121 +89,139 @@
     <session id="-251275044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="22" />
           <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.41" value="2" />
+          <entry key="project.open.time.39" value="2" />
+          <entry key="project.open.time.41" value="3" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.open.time.47" value="2" />
+          <entry key="project.open.time.47" value="3" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.84" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="10" />
-          <entry key="css" value="6" />
-          <entry key="hibernate_sequence" value="1" />
-          <entry key="java" value="91" />
-          <entry key="js" value="10" />
-          <entry key="mustache" value="9" />
-          <entry key="properties" value="12" />
+          <entry key="class" value="37" />
+          <entry key="css" value="10" />
+          <entry key="facebook_users" value="6" />
+          <entry key="ftl" value="6" />
+          <entry key="hibernate_sequence" value="2" />
+          <entry key="java" value="268" />
+          <entry key="js" value="19" />
+          <entry key="mustache" value="18" />
+          <entry key="properties" value="17" />
           <entry key="sql" value="1" />
           <entry key="summaries" value="7" />
           <entry key="summary_tags" value="1" />
-          <entry key="user_role" value="7" />
-          <entry key="users" value="11" />
-          <entry key="xml" value="13" />
+          <entry key="twitter_users" value="3" />
+          <entry key="user_role" value="9" />
+          <entry key="users" value="29" />
+          <entry key="xml" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="10" />
-          <entry key="CSS" value="6" />
-          <entry key="Database Element" value="27" />
-          <entry key="HTML" value="9" />
-          <entry key="JAVA" value="91" />
-          <entry key="JavaScript" value="10" />
-          <entry key="Properties" value="12" />
+          <entry key="CLASS" value="37" />
+          <entry key="CSS" value="10" />
+          <entry key="Database Element" value="57" />
+          <entry key="FTL" value="6" />
+          <entry key="HTML" value="18" />
+          <entry key="JAVA" value="268" />
+          <entry key="JavaScript" value="19" />
+          <entry key="Properties" value="17" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="37" />
-          <entry key="css" value="4" />
+          <entry key="cell" value="44" />
+          <entry key="css" value="31" />
           <entry key="dummy" value="53" />
-          <entry key="java" value="5828" />
-          <entry key="js" value="2029" />
-          <entry key="mustache" value="2378" />
-          <entry key="properties" value="32" />
+          <entry key="ftl" value="569" />
+          <entry key="java" value="11478" />
+          <entry key="js" value="2577" />
+          <entry key="mustache" value="2510" />
+          <entry key="properties" value="45" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="31" />
+          <entry key="xml" value="60" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="4" />
-          <entry key="HTML" value="2378" />
-          <entry key="JAVA" value="5828" />
-          <entry key="JavaScript" value="2029" />
+          <entry key="CSS" value="31" />
+          <entry key="FTL" value="569" />
+          <entry key="HTML" value="2510" />
+          <entry key="JAVA" value="11478" />
+          <entry key="JavaScript" value="2577" />
           <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Properties" value="32" />
-          <entry key="Scratch" value="37" />
-          <entry key="XML" value="31" />
+          <entry key="Properties" value="45" />
+          <entry key="Scratch" value="44" />
+          <entry key="XML" value="60" />
         </counts>
       </usages-collector>
     </session>
     <session id="-1356867746">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.103" value="1" />
+          <entry key="project.open.time.143" value="1" />
           <entry key="project.open.time.59" value="1" />
+          <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="2" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.67" value="1" />
-          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.open.time.70" value="2" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.96" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1277" />
-          <entry key="js" value="1080" />
-          <entry key="mustache" value="32" />
-          <entry key="properties" value="139" />
-          <entry key="xml" value="5" />
+          <entry key="dummy" value="15" />
+          <entry key="ftl" value="4" />
+          <entry key="java" value="2136" />
+          <entry key="js" value="1087" />
+          <entry key="mustache" value="43" />
+          <entry key="properties" value="172" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="32" />
-          <entry key="JAVA" value="1277" />
-          <entry key="JavaScript" value="1080" />
-          <entry key="Properties" value="139" />
-          <entry key="XML" value="5" />
+          <entry key="FTL" value="4" />
+          <entry key="HTML" value="43" />
+          <entry key="JAVA" value="2136" />
+          <entry key="JavaScript" value="1087" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Properties" value="172" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="10" />
-          <entry key="JavaScript" value="6" />
-          <entry key="XML" value="2" />
+          <entry key="CLASS" value="5" />
+          <entry key="FTL" value="1" />
+          <entry key="HTML" value="3" />
+          <entry key="JAVA" value="122" />
+          <entry key="JavaScript" value="13" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -186,10 +230,13 @@
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="10" />
-          <entry key="js" value="6" />
-          <entry key="xml" value="2" />
+          <entry key="class" value="5" />
+          <entry key="ftl" value="1" />
+          <entry key="java" value="122" />
+          <entry key="js" value="13" />
+          <entry key="mustache" value="3" />
+          <entry key="properties" value="2" />
+          <entry key="xml" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -199,68 +246,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MailSender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#418#443#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+            <state relative-caret-position="-519">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.mustache">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="35" column="94" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="229">
+              <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -273,10 +272,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="CSS File" />
         <option value="JavaScript File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -291,6 +291,10 @@
       <find>strPos</find>
       <find>selectionStart</find>
       <find>sendToServer</find>
+      <find>notification</find>
+      <find>openWindow</find>
+      <find>uid</find>
+      <find>jsonResource</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -299,57 +303,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TestTagsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummaryTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTagBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/FacebookController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/headerStyle.css" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/FacebookUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/WebSecurityComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/NotificationRegistration.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MainWebAppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/FormMultipart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/FtpConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/AsuncLoadFTP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/Summaries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/MultipartFileBuffer.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/styles/animateLoading.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryWebService.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/jquery.insertAtCaret.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/markdownEditor.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/JSONImageData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/AsuncDownloaderFTP.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/SummaryTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Roles.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UsersRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Users.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/JasyptConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/AppConfigForJasyptSimple.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/PropertyServiceForJasyptSimple.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/FacebookUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/enums/AuthorityType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/SimpleUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/VKontakteUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/VKontakteUser.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main.mustache" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/encrypted.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/AppConfigForJasyptStarter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/PropertyServiceForJasyptStarter.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MailConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MailSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/headerActions.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/NotificationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/OAuth2Social.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/Oauth1Social.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TwitterUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/TwitterUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/OAuth1Social.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SimpleUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SocialAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/FacebookNotificationRegistration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleNotificationRegistration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/TwitterNotificationRegistration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/VKontakteNotificationRegistration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Summaries.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/StompPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CustomHandshakeHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SimpleAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleSocialComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" />
       </list>
     </option>
   </component>
@@ -373,10 +377,27 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-172" />
-    <option name="y" value="-12" />
+    <option name="x" value="-56" />
+    <option name="y" value="-14" />
     <option name="width" value="1216" />
     <option name="height" value="688" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>FreeMarker</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>FtlWellformednessInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -426,6 +447,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -455,6 +485,26 @@
               <item name="VSummary" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
@@ -495,7 +545,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="parts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -514,7 +591,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542482101443" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542814112536" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -526,18 +603,18 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\VSummary\src\main\resources\static\js" />
-      <recent name="D:\java\VSummary\src\main\resources\static" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\VSummary\src\main\resources\templates" />
       <recent name="D:\java\VSummary\src\main\resources\static\styles" />
+      <recent name="D:\java\VSummary\src\main\java\Com\VSummary\domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Com.VSummary.repository" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\VSummary\src\main\resources\static\js" />
+      <recent name="D:\java\VSummary\src\main\resources\static" />
       <recent name="D:\java\VSummary\src\main\resources\static\styles" />
-      <recent name="D:\java\VSummary\src\main\resources\templates" />
-      <recent name="D:\java\VSummary\src\main\java\Com\VSummary\domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -605,12 +682,23 @@
       <workItem from="1542389485403" duration="3089000" />
       <workItem from="1542447646288" duration="113000" />
       <workItem from="1542448186611" duration="9956000" />
-      <workItem from="1542466810295" duration="14708000" />
+      <workItem from="1542466810295" duration="15328000" />
+      <workItem from="1542524760358" duration="35795000" />
+      <workItem from="1542574153773" duration="2322000" />
+      <workItem from="1542613171497" duration="7889000" />
+      <workItem from="1542624750603" duration="2150000" />
+      <workItem from="1542638154103" duration="2649000" />
+      <workItem from="1542653606228" duration="2454000" />
+      <workItem from="1542698275180" duration="26670000" />
+      <workItem from="1542729537656" duration="9187000" />
+      <workItem from="1542781897024" duration="1584000" />
+      <workItem from="1542785816916" duration="14423000" />
+      <workItem from="1542806912489" duration="6499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162452000" />
+    <option name="totallyTimeSpent" value="274694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,10 +710,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1381" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34434968" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27706283" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -634,17 +722,17 @@
       <window_info id="Image Layers" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4989339" visible="true" weight="0.39804772" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4982699" visible="true" weight="0.3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.3991323" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286334" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5017301" side_tool="true" weight="0.4368231" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3262295" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -654,7 +742,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.119936034" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.15897048" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
@@ -667,253 +755,256 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="twitterUser.getOauthToken() == accessToken.getValue()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>s2</expression-string>
+        <expression-string>twitterUser.getOauthToken() == accessToken.getValue()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>s</expression-string>
+        <expression-string>new TwitterTemplate(twitterAppId, twitterSecret, accessToken.getValue(), accessToken.getSecret()).userOperations().getScreenName()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>service.getProperty()</expression-string>
+        <expression-string>new TwitterTemplate(twitterAppId, twitterSecret, accessToken.getValue(), accessToken.getSecret()).userOperations().getProfileId()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>service</expression-string>
+        <expression-string>new TwitterTemplate(twitterAppId, twitterSecret, oauthToken, oauthVerifier).userOperations().getProfileId()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>idFiles[1]</expression-string>
+        <expression-string>new TwitterTemplate(twitterAppId, twitterSecret, oauthToken, oauthVerifier).userOperations().getScreenName()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>idFiles[0]</expression-string>
+        <expression-string>new TwitterTemplate(twitterAppId, twitterSecret, oauthToken, oauthVerifier)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>files.get(0).getInputStream()</expression-string>
+        <expression-string>answer.get(&quot;response&quot;).values()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>files.get(0).inputStream</expression-string>
+        <expression-string>answer.get(&quot;response&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>file.getInputStream()</expression-string>
+        <expression-string>(ArrayList&lt;Map&gt;)(answer.get(&quot;response&quot;)).get(0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="setValue">
       <expression>
-        <expression-string>files[0].getInputStream()</expression-string>
+        <expression-string>&quot;VKontakte returned error_code = [8] error_msg = [Invalid request: v (version) is required]&quot;</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/hibernate_sequence" />
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/core/io/InputStreamSource.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/WebSecurityComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/multipart/MultipartFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="50" lean-forward="true" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/FormMultipart.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/MainWebAppInitializer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/FtpConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="37" column="66" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="698" column="29" selection-start-line="698" selection-start-column="29" selection-end-line="698" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/animateLoading.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.insertAtCaret.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/markdownEditor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="100" selection-start-line="46" selection-start-column="100" selection-end-line="46" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryWebService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/JSONImageData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/AsuncDownloaderFTP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-222">
-          <caret line="51" column="75" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2125">
-          <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/MultipartFileBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/CreateSummariesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="138" column="44" selection-start-line="138" selection-start-column="24" selection-end-line="138" selection-end-column="44" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#4833#4834#0" expanded="true" />
-            <element signature="e#4893#4894#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/ElasticsearchConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="-302">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="429">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTagBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/MailConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Summaries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/TwitterUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/enums/AuthorityType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/enums/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/NotificationRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/AsuncDownloaderFTP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1458">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/MultipartFileBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/JSONImageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SimpleMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/StompPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/SummaryTags.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/FacebookUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/signin.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
-            <element signature="e#211#212#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/SimpleUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
@@ -923,145 +1014,269 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/VKontakteUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="391">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTagBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/encrypted.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/AppConfigForJasyptStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/PropertyServiceForJasyptStarter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SimpleUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-start-column="2" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/FacebookUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="81" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TwitterUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/VKontakteUserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/user_role">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" lean-forward="true" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/MailConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="34" column="60" lean-forward="true" selection-start-line="34" selection-start-column="60" selection-end-line="34" selection-end-column="60" />
+        <state relative-caret-position="85">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#373#394#1" expanded="true" />
-            <element signature="e#430#455#1" expanded="true" />
-            <element signature="e#490#515#1" expanded="true" />
-            <element signature="e#551#572#1" expanded="true" />
-            <element signature="e#608#633#1" expanded="true" />
-            <element signature="e#669#684#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/CreateSummariesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2019">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/FacebookService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="327">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MailSender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="289">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#418#443#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/NotificationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="47" column="78" selection-start-line="47" selection-start-column="78" selection-end-line="47" selection-end-column="78" />
+        <state relative-caret-position="55">
+          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CustomHandshakeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/OAuth2Social.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/OAuth1Social.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SocialAuthentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SimpleAuthentication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleSocialComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/FacebookSocialComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="80" column="5" selection-start-line="80" selection-start-column="5" selection-end-line="80" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/VKontakteSocialComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/TwitterSocialComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-519">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1070,25 +1285,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="35" column="94" selection-start-line="35" selection-start-column="94" selection-end-line="35" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="229">
+          <caret line="168" column="5" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
