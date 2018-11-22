@@ -79,4 +79,9 @@ public class FacebookSocialComponent implements OAuth2Social<FacebookUser> {
 
         return facebookUser;
     }
+
+    @Override
+    public boolean instanseOf(Class cls) {
+        return cls == OAuth2Social.class;
+    }
 }

@@ -83,4 +83,9 @@ public class SimpleSocialComponent implements SimpleAuthentication {
     public String getAuthenticationUrl() {
         return "http://localhost:8080/login";
     }
+
+    @Override
+    public boolean instanseOf(Class cls) {
+        return cls == SimpleAuthentication.class;
+    }
 }

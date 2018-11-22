@@ -93,4 +93,9 @@ public class VKontakteSocialComponent implements OAuth2Social<VKontakteUser> {
 
         return oauthOperations.buildAuthorizeUrl(params) + "&v=5.87";
     }
+
+    @Override
+    public boolean instanseOf(Class cls) {
+        return cls == OAuth2Social.class;
+    }
 }

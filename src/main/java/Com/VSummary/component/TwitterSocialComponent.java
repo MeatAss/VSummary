@@ -77,4 +77,9 @@ public class TwitterSocialComponent implements OAuth1Social<TwitterUser> {
         OAuthToken requestToken = oauthOperations.fetchRequestToken( "http://127.0.0.1:8080/activate/OAuth1/twitter", null );
         return oauthOperations.buildAuthorizeUrl(requestToken.getValue(), OAuth1Parameters.NONE );
     }
+
+    @Override
+    public boolean instanseOf(Class cls) {
+        return cls == OAuth1Social.class;
+    }
 }

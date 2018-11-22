@@ -16,8 +16,6 @@ import org.springframework.social.support.URIBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import java.net.URI;
-
 @Service
 public class AuthenticationService {
 
@@ -37,134 +35,151 @@ public class AuthenticationService {
     TwitterSocialComponent twitter;
 
     public ResponseEntity<String> activeSimple(String type, String code) {
-        if (StringUtils.isEmpty(type) || StringUtils.isEmpty(code))
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
+//        if (isEmptyParams(type, code) && checkType(type))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//
+//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
+//
+//        if (!(socialAuthentication instanceof SimpleAuthentication))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        SocialAuthentication socialAuthentication = checkParams(SimpleAuthentication.class, type, code);
 
-        SocialAuthentication socialAuthentication;
+        if (socialAuthentication == null)
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        try {
-            AuthorityType authorityType = AuthorityType.valueOf(type.toUpperCase());
-            socialAuthentication = getSocialByAuthorityType(authorityType);
-        } catch (NullPointerException e) {
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
-        }
-
-        if (!(socialAuthentication instanceof SimpleAuthentication))
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
-
-        if (((SimpleAuthentication) socialAuthentication).resiveRegistrationData(code))
-            return new ResponseEntity<>("http://localhost:8080", HttpStatus.OK);
-        else
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
+        return ((SimpleAuthentication) socialAuthentication).resiveRegistrationData(code) ?
+            new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND) :
+            new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> sendSimpleUserActivationCode(String type, String email, String username, String password) {
-        if (StringUtils.isEmpty(type) || StringUtils.isEmpty(email) || StringUtils.isEmpty(username) || StringUtils.isEmpty(password))
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
+//        if (isEmptyParams(type, email, username, password) && checkType(type))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//
+//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
+//
+//        if (!(socialAuthentication instanceof SimpleAuthentication))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        SocialAuthentication socialAuthentication = checkParams(SimpleAuthentication.class, type, email, username, password);
 
-        SocialAuthentication socialAuthentication;
+        if (socialAuthentication == null)
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        try {
-            AuthorityType authorityType = AuthorityType.valueOf(type.toUpperCase());
-            socialAuthentication = getSocialByAuthorityType(authorityType);
-        } catch (NullPointerException e) {
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
-        }
-
-        if (!(socialAuthentication instanceof SimpleAuthentication))
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
-
-        if (((SimpleAuthentication) socialAuthentication).sendRegistrationData(email, username, password))
-            return new ResponseEntity<>("http://localhost:8080", HttpStatus.OK);
-        else
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
+        return ((SimpleAuthentication) socialAuthentication).sendRegistrationData(email, username, password) ?
+            new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND) :
+            new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> activateOAuth1User(String type, String oauthToken, String oauthVerifier) {
-        HttpHeaders httpHeaders = new HttpHeaders();
+//        if (isEmptyParams(type, oauthToken, oauthVerifier) && checkType(type))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//
+//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
+//
+//        if (!(socialAuthentication instanceof OAuth1Social))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        httpHeaders.setLocation(URIBuilder.fromUri("http://localhost:8080/main").build());
+        SocialAuthentication socialAuthentication = checkParams(OAuth1Social.class, type, oauthToken, oauthVerifier);
 
-        if (StringUtils.isEmpty(type) || StringUtils.isEmpty(oauthVerifier) || oauthToken == null)
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
-
-        SocialAuthentication socialAuthentication;
-
-        try {
-            AuthorityType authorityType = AuthorityType.valueOf(type.toUpperCase());
-            socialAuthentication = getSocialByAuthorityType(authorityType);
-        } catch (NullPointerException e) {
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
-        }
-
-        if (!(socialAuthentication instanceof OAuth1Social))
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
+        if (socialAuthentication == null)
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
         User user = (User)((OAuth1Social) socialAuthentication).activeUser(oauthToken, oauthVerifier);
 
         if (user == null)
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
 
         webSecurityComponent.SignIn(user);
-        return new ResponseEntity<>(httpHeaders, HttpStatus.FOUND);
+        return new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND);
     }
 
     public ResponseEntity<String> activateOAuth2User(String type, String code) {
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setLocation(URIBuilder.fromUri("http://localhost:8080/main").build());
+//        if (isEmptyParams(type, code) && checkType(type))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+//
+//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
+//
+//        if (!(socialAuthentication instanceof OAuth2Social))
+//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        if (StringUtils.isEmpty(type) || StringUtils.isEmpty(code))
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
+        SocialAuthentication socialAuthentication = checkParams(OAuth2Social.class, type, code);
 
-        SocialAuthentication socialAuthentication;
-
-        try {
-            AuthorityType authorityType = AuthorityType.valueOf(type.toUpperCase());
-            socialAuthentication = getSocialByAuthorityType(authorityType);
-        } catch (NullPointerException e) {
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
-        }
-
-        if (!(socialAuthentication instanceof OAuth2Social))
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
+        if (socialAuthentication == null)
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
         User user = (User)((OAuth2Social) socialAuthentication).activeUser(code);
 
         if (user == null)
-            return new ResponseEntity<>(httpHeaders, HttpStatus.BAD_REQUEST);
-
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
         webSecurityComponent.SignIn(user);
-        return new ResponseEntity<>(httpHeaders, HttpStatus.FOUND);
+        return new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND);
     }
 
     public ResponseEntity<String> openAuthentication(String type) {
-        if (StringUtils.isEmpty(type))
-            return new ResponseEntity<>("", HttpStatus.BAD_REQUEST);
-        else
-            return new ResponseEntity<>(
+        return isEmptyParams(type) ?
+                new ResponseEntity<>("", HttpStatus.BAD_REQUEST)
+                :
+                new ResponseEntity<>(
                     new JSONObject().put(
                             "url",
-                            getAuthenticationUrl(AuthorityType.valueOf(type))
+                            getAuthenticationUrl(type)
                     ).toString(), HttpStatus.OK);
     }
 
-    private String getAuthenticationUrl(AuthorityType authorityType) {
-        SocialAuthentication socialAuthentication = getSocialByAuthorityType(authorityType);
+    private SocialAuthentication checkParams(Class typeSocialAuthentication, String type, String... params){
+        if (isEmptyParams(params) && checkType(type))
+            return null;
+
+        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
+
+        if (socialAuthentication == null)
+            return null;
+
+        return socialAuthentication.instanseOf(typeSocialAuthentication) ?
+                socialAuthentication :
+                null;
+    }
+
+    private String getAuthenticationUrl(String type) {
+        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
         return socialAuthentication != null ? socialAuthentication.getAuthenticationUrl() : "";
     }
 
-    private SocialAuthentication getSocialByAuthorityType(AuthorityType authorityType) {
-        if (authorityType == AuthorityType.SIMPLE)
-            return simple;
-        if (authorityType == AuthorityType.FACEBOOK)
-            return facebook;
-        if (authorityType == AuthorityType.VKONTAKTE)
-            return vkontakte;
-        if (authorityType == AuthorityType.TWITTER)
-            return twitter;
+    private boolean isEmptyParams(String... params){
+        for (String param : params) {
+            if (StringUtils.isEmpty(param))
+                return true;
+        }
 
-        return null;
+        return false;
+    }
+
+    private HttpHeaders createRedirectHeader(String redirectURL){
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.setLocation(URIBuilder.fromUri(redirectURL).build());
+
+        return httpHeaders;
+    }
+
+    private SocialAuthentication getSocialByAuthorityType(String type) {
+        switch (AuthorityType.valueOf(type.toUpperCase())) {
+            case FACEBOOK: return facebook;
+            case TWITTER: return twitter;
+            case VKONTAKTE: return vkontakte;
+            case SIMPLE: return simple;
+            default: return null;
+        }
+    }
+
+    private boolean checkType(String type){
+        for (AuthorityType authorityType : AuthorityType.values()){
+            if (authorityType.name().equalsIgnoreCase(type)){
+                return true;
+            }
+        }
+
+        return false;
     }
 }
