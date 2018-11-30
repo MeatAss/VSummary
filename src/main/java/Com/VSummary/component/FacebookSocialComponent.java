@@ -1,15 +1,11 @@
 package Com.VSummary.component;
 
-import Com.VSummary.domain.entities.FacebookUser;
-import Com.VSummary.domain.enums.AuthorityType;
-import Com.VSummary.domain.enums.Role;
+import Com.VSummary.domain.entities.MySQL.FacebookUser;
 import Com.VSummary.domain.interfaces.OAuth2Social;
 import Com.VSummary.repository.FacebookUserRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.social.facebook.api.Facebook;
 import org.springframework.social.facebook.api.User;
 import org.springframework.social.facebook.api.impl.FacebookTemplate;
@@ -18,8 +14,6 @@ import org.springframework.social.oauth2.AccessGrant;
 import org.springframework.social.oauth2.OAuth2Operations;
 import org.springframework.social.oauth2.OAuth2Parameters;
 import org.springframework.stereotype.Component;
-
-import java.util.Collections;
 
 @Component
 public class FacebookSocialComponent implements OAuth2Social<FacebookUser> {
@@ -30,10 +24,6 @@ public class FacebookSocialComponent implements OAuth2Social<FacebookUser> {
     private String facebookSecret;
 
     @Autowired
-    @Lazy
-    private PasswordEncoder passwordEncoder;
-
-    @Autowired
     private FacebookUserRepository facebookUserRepository;
 
     @Override
@@ -42,7 +32,7 @@ public class FacebookSocialComponent implements OAuth2Social<FacebookUser> {
         OAuth2Operations oauthOperations = connectionFactory.getOAuthOperations();
         OAuth2Parameters params = new OAuth2Parameters();
         params.setRedirectUri("http://localhost:8080/activate/OAuth2/facebook");
-        params.setScope("public_profile, email");
+        params.setScope("public_profile");
         return oauthOperations.buildAuthorizeUrl(params);
     }
 
@@ -56,10 +46,10 @@ public class FacebookSocialComponent implements OAuth2Social<FacebookUser> {
             return null;
 
         Facebook facebook = new FacebookTemplate(accessToken);
-        User userData = facebook.fetchObject("me", User.class, "first_name, last_name, email");
+        User userData = facebook.fetchObject("me", User.class, "first_name, last_name");
 
 
-        FacebookUser facebookUser = facebookUserRepository.findByEmail(userData.getEmail());
+        FacebookUser facebookUser = facebookUserRepository.findByUserId(userData.getId());
 
         if (facebookUser != null) {
             facebookUser.setToken(accessToken);
@@ -68,20 +58,19 @@ public class FacebookSocialComponent implements OAuth2Social<FacebookUser> {
         }
 
         facebookUser = new FacebookUser(
+                userData.getId(),
+                accessToken,
                 userData.getFirstName(),
-                userData.getLastName(),
-                userData.getEmail(),
-                accessToken
+                userData.getLastName()
         );
 
-        facebookUser.randomUserData(passwordEncoder, Collections.singleton(Role.USER), AuthorityType.FACEBOOK);
         facebookUserRepository.save(facebookUser);
 
         return facebookUser;
     }
 
     @Override
-    public boolean instanseOf(Class cls) {
+    public boolean instanceOf(Class cls) {
         return cls == OAuth2Social.class;
     }
 }

@@ -1,14 +1,10 @@
 package Com.VSummary.component;
 
-import Com.VSummary.domain.entities.VKontakteUser;
-import Com.VSummary.domain.enums.AuthorityType;
-import Com.VSummary.domain.enums.Role;
+import Com.VSummary.domain.entities.MySQL.VKontakteUser;
 import Com.VSummary.domain.interfaces.OAuth2Social;
 import Com.VSummary.repository.VKontakteUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.social.oauth2.AccessGrant;
 import org.springframework.social.oauth2.OAuth2Operations;
 import org.springframework.social.oauth2.OAuth2Parameters;
@@ -18,7 +14,6 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -33,10 +28,6 @@ public class VKontakteSocialComponent implements OAuth2Social<VKontakteUser> {
 
     @Autowired
     private VKontakteUserRepository vKontakteUserRepository;
-
-    @Autowired
-    @Lazy
-    private PasswordEncoder passwordEncoder;
 
     @Override
     public VKontakteUser activeUser(String code) {
@@ -67,12 +58,11 @@ public class VKontakteSocialComponent implements OAuth2Social<VKontakteUser> {
 
         vKontakteUser = new VKontakteUser(
                 response.get("id").toString(),
+                accessToken,
                 response.get("first_name").toString(),
-                response.get("last_name").toString(),
-                accessToken
+                response.get("last_name").toString()
         );
 
-        vKontakteUser.randomUserData(passwordEncoder, Collections.singleton(Role.USER), AuthorityType.VKONTAKTE);
         vKontakteUserRepository.save(vKontakteUser);
 
         return vKontakteUser;
@@ -95,7 +85,7 @@ public class VKontakteSocialComponent implements OAuth2Social<VKontakteUser> {
     }
 
     @Override
-    public boolean instanseOf(Class cls) {
+    public boolean instanceOf(Class cls) {
         return cls == OAuth2Social.class;
     }
 }

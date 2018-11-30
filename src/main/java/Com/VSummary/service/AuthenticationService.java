@@ -1,7 +1,7 @@
 package Com.VSummary.service;
 
 import Com.VSummary.component.*;
-import Com.VSummary.domain.entities.User;
+import Com.VSummary.domain.entities.MySQL.User;
 import Com.VSummary.domain.enums.AuthorityType;
 import Com.VSummary.domain.interfaces.OAuth1Social;
 import Com.VSummary.domain.interfaces.OAuth2Social;
@@ -35,31 +35,17 @@ public class AuthenticationService {
     TwitterSocialComponent twitter;
 
     public ResponseEntity<String> activeSimple(String type, String code) {
-//        if (isEmptyParams(type, code) && checkType(type))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//
-//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
-//
-//        if (!(socialAuthentication instanceof SimpleAuthentication))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         SocialAuthentication socialAuthentication = checkParams(SimpleAuthentication.class, type, code);
 
         if (socialAuthentication == null)
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        return ((SimpleAuthentication) socialAuthentication).resiveRegistrationData(code) ?
+        return ((SimpleAuthentication) socialAuthentication).receiveRegistrationData(code) ?
             new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND) :
             new ResponseEntity<>(HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> sendSimpleUserActivationCode(String type, String email, String username, String password) {
-//        if (isEmptyParams(type, email, username, password) && checkType(type))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//
-//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
-//
-//        if (!(socialAuthentication instanceof SimpleAuthentication))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         SocialAuthentication socialAuthentication = checkParams(SimpleAuthentication.class, type, email, username, password);
 
         if (socialAuthentication == null)
@@ -67,54 +53,25 @@ public class AuthenticationService {
 
         return ((SimpleAuthentication) socialAuthentication).sendRegistrationData(email, username, password) ?
             new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND) :
-            new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+            new ResponseEntity<>("This user is exist", HttpStatus.BAD_REQUEST);
     }
 
     public ResponseEntity<String> activateOAuth1User(String type, String oauthToken, String oauthVerifier) {
-//        if (isEmptyParams(type, oauthToken, oauthVerifier) && checkType(type))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//
-//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
-//
-//        if (!(socialAuthentication instanceof OAuth1Social))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-
         SocialAuthentication socialAuthentication = checkParams(OAuth1Social.class, type, oauthToken, oauthVerifier);
 
         if (socialAuthentication == null)
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        User user = (User)((OAuth1Social) socialAuthentication).activeUser(oauthToken, oauthVerifier);
-
-        if (user == null)
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-
-
-        webSecurityComponent.SignIn(user);
-        return new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND);
+        return  activateOAuth((User)((OAuth1Social) socialAuthentication).activeUser(oauthToken, oauthVerifier));
     }
 
     public ResponseEntity<String> activateOAuth2User(String type, String code) {
-//        if (isEmptyParams(type, code) && checkType(type))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//
-//        SocialAuthentication socialAuthentication = getSocialByAuthorityType(type);
-//
-//        if (!(socialAuthentication instanceof OAuth2Social))
-//            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-
         SocialAuthentication socialAuthentication = checkParams(OAuth2Social.class, type, code);
 
         if (socialAuthentication == null)
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
-        User user = (User)((OAuth2Social) socialAuthentication).activeUser(code);
-
-        if (user == null)
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-
-        webSecurityComponent.SignIn(user);
-        return new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND);
+        return activateOAuth((User)((OAuth2Social) socialAuthentication).activeUser(code));
     }
 
     public ResponseEntity<String> openAuthentication(String type) {
@@ -137,7 +94,7 @@ public class AuthenticationService {
         if (socialAuthentication == null)
             return null;
 
-        return socialAuthentication.instanseOf(typeSocialAuthentication) ?
+        return socialAuthentication.instanceOf(typeSocialAuthentication) ?
                 socialAuthentication :
                 null;
     }
@@ -181,5 +138,13 @@ public class AuthenticationService {
         }
 
         return false;
+    }
+
+    private ResponseEntity<String> activateOAuth(User user) {
+        if (user == null)
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+
+        webSecurityComponent.SignIn(user);
+        return new ResponseEntity<>(createRedirectHeader("http://localhost:8080/main"), HttpStatus.FOUND);
     }
 }

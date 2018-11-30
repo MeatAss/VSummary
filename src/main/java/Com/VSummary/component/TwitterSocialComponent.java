@@ -1,14 +1,10 @@
 package Com.VSummary.component;
 
-import Com.VSummary.domain.entities.TwitterUser;
-import Com.VSummary.domain.enums.AuthorityType;
-import Com.VSummary.domain.enums.Role;
+import Com.VSummary.domain.entities.MySQL.TwitterUser;
 import Com.VSummary.domain.interfaces.OAuth1Social;
 import Com.VSummary.repository.TwitterUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.social.oauth1.AuthorizedRequestToken;
 import org.springframework.social.oauth1.OAuth1Operations;
 import org.springframework.social.oauth1.OAuth1Parameters;
@@ -18,8 +14,6 @@ import org.springframework.social.twitter.api.impl.TwitterTemplate;
 import org.springframework.social.twitter.connect.TwitterConnectionFactory;
 import org.springframework.stereotype.Component;
 
-import java.util.Collections;
-
 @Component
 public class TwitterSocialComponent implements OAuth1Social<TwitterUser> {
 
@@ -27,10 +21,6 @@ public class TwitterSocialComponent implements OAuth1Social<TwitterUser> {
     private String twitterAppId;
     @Value("${spring.social.twitter.appSecret}")
     private String twitterSecret;
-
-    @Autowired
-    @Lazy
-    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private TwitterUserRepository twitterUserRepository;
@@ -47,7 +37,7 @@ public class TwitterSocialComponent implements OAuth1Social<TwitterUser> {
 
         Twitter twitter =  new TwitterTemplate(twitterAppId, twitterSecret, accessToken.getValue(), accessToken.getSecret());
 
-        TwitterUser twitterUser = twitterUserRepository.findByProfileId(twitter.userOperations().getProfileId());
+        TwitterUser twitterUser = twitterUserRepository.findByUserId(twitter.userOperations().getProfileId());
 
         if (twitterUser != null) {
             twitterUser.setOauthToken(accessToken.getValue());
@@ -58,12 +48,11 @@ public class TwitterSocialComponent implements OAuth1Social<TwitterUser> {
 
         twitterUser = new TwitterUser(
                 twitter.userOperations().getProfileId(),
-                twitter.userOperations().getScreenName(),
                 accessToken.getValue(),
-                accessToken.getSecret()
+                accessToken.getSecret(),
+                twitter.userOperations().getScreenName()
         );
 
-        twitterUser.randomUserData(passwordEncoder, Collections.singleton(Role.USER), AuthorityType.TWITTER);
         twitterUserRepository.save(twitterUser);
 
         return twitterUser;
@@ -79,7 +68,7 @@ public class TwitterSocialComponent implements OAuth1Social<TwitterUser> {
     }
 
     @Override
-    public boolean instanseOf(Class cls) {
+    public boolean instanceOf(Class cls) {
         return cls == OAuth1Social.class;
     }
 }

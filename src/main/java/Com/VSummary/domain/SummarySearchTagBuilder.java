@@ -1,5 +1,6 @@
 package Com.VSummary.domain;
 
+import Com.VSummary.domain.entities.elasticsearch.SummarySearchTag;
 import org.springframework.data.elasticsearch.core.completion.Completion;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 

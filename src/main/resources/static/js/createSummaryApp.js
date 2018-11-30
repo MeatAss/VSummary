@@ -1,10 +1,14 @@
 $(document).ready(function () {
-    $('#sumaryTags').on('input', function(){ sendTag(this); });
+    createMarkdown(document.getElementById("textSummary"));
+
+    $('#summaryTags').on('input', function(){ sendTag(this); });
     $(document).on('click', function(){ $('#tagsUL').addClass('invisible'); });
 
     $("#addSummaryForm").on('submit', function (e) {
         e.preventDefault();
     });
+
+
 });
 
 function updateTags(results) {
@@ -15,9 +19,9 @@ function updateTags(results) {
             $('<li></li>')
                 .addClass('nav-item')
                 .on('click', function(){
-                    textVal = $('#sumaryTags').val();
-                    textVal = textVal.slice(0, textVal.length - getLastWord($('#sumaryTags')).length) + $(this).text();
-                    $('#sumaryTags').val(textVal);
+                    textVal = $('#summaryTags').val();
+                    textVal = textVal.slice(0, textVal.length - getLastWord($('#summaryTags')).length) + $(this).text();
+                    $('#summaryTags').val(textVal);
                     $('#tagsUL').addClass('invisible');
                 })
                 .text(result.message)
@@ -42,24 +46,29 @@ function getLastWord(elem) {
 }
 
 function sendData() {
-    if (!$('#addSummaryForm')[0].checkValidity())
+    form = $('#addSummaryForm');
+    if (!form[0].checkValidity() | !checkValidityMarkdown(form))
         return;
 
     spis = {
-        "nameSummary" : $('#nameSummary').val(),
-        "shortDescription" : $('#shortDescription').val(),
-        "specialtyNumber" : $('#specialtyNumber').val(),
-        "sumaryTags" : $('#sumaryTags').val(),
-        "textSummary" : $('#textSummary').val()
+        "id" : form.find('#idSummary').val(),
+        "nameSummary" : form.find('#nameSummary').val(),
+        "shortDescription" : form.find('#shortDescription').val(),
+        "specialtyNumber" : form.find('#specialtyNumber').val(),
+        "textSummary" : form.find('#textSummary').val()
     };
+
+    url = '/createSummary/addSummary?userId=' + form.find('#userId').val() + '&summaryTags=' + form.find('#summaryTags').val().split(' ');
 
     $.ajax({
         type: 'POST',
-        dataType: 'json',
         contentType: 'application/json',
-        url: '/createSummary/addSummary',
+        url: url,
         data: JSON.stringify(spis),
-        success: function(data) {
+        success: (data) => {
+            window.location.href = data;
+        },
+        error: (data) => {
             alert(data);
         }
     });

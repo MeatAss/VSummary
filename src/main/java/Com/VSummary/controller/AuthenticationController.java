@@ -7,10 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
-
-import java.util.Map;
 
 @Controller
 public class AuthenticationController {
@@ -20,7 +16,7 @@ public class AuthenticationController {
 
     @PostMapping("/openAuthentication")
     @ResponseBody
-    public ResponseEntity<String> openAuthentication(@RequestBody SimpleMessage message, Map<String, Object> model) {
+    public ResponseEntity<String> openAuthentication(@RequestBody SimpleMessage message, Model model) {
         return authenticationService.openAuthentication(message.getMessage());
     }
 
@@ -31,22 +27,19 @@ public class AuthenticationController {
             @RequestParam("email") String email,
             @RequestParam("username") String username,
             @RequestParam("password") String password,
-            Map<String, Object> model){
+            Model model){
 
         return authenticationService.sendSimpleUserActivationCode(type, email, username, password);
     }
 
     @GetMapping("/activate/Simple/{type}")
     @ResponseBody
-    public ModelAndView activateSimple(
+    public ResponseEntity<String> activateSimple(
             Model model,
             @PathVariable("type") String type,
             @RequestParam("code") String code) {
 
-        authenticationService.activeSimple(type, code);
-        RedirectView view = new RedirectView("http://localhost:8080/main", true);
-        view.setExposeModelAttributes(false);
-        return new ModelAndView(view);
+        return authenticationService.activeSimple(type, code);
     }
 
     @GetMapping("/activate/OAuth1/{type}")
@@ -66,6 +59,7 @@ public class AuthenticationController {
             Model model,
             @PathVariable("type") String type,
             @RequestParam("code") String code) {
+
         return authenticationService.activateOAuth2User(type, code);
     }
 }

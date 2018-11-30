@@ -1,8 +1,8 @@
-var simplemde = null;
-$(document).ready(function() {
-        simplemde = new SimpleMDE({
-        autofocus: true,
-        element: document.getElementById("textSummary"),
+const minlength = 25, maxlength = 1000;
+
+function createMarkdown(textarea){
+    simplemde = new SimpleMDE({
+        element: textarea,
         forceSync: true,
         indentWithTabs: false,
         insertTexts: {
@@ -18,9 +18,7 @@ $(document).ready(function() {
             underscoresBreakWords: true,
         },
         placeholder: "Type here...",
-        previewRender: function(plainText) {
-            return SimpleMDE.prototype.markdown(plainText); // Returns HTML from a custom parser
-        },
+        previewRender: getHTML,
         renderingConfig: {
             singleLineBreaks: false,
             codeSyntaxHighlighting: true,
@@ -30,8 +28,6 @@ $(document).ready(function() {
         },
         showIcons: ["code", "table"],
         spellChecker: false,
-        status: false,
-        status: ["autosave", "lines", "words", "cursor"], // Optional usage
         status: ["autosave", "lines", "words", "cursor", {
             className: "keystrokes",
             defaultValue: function(el) {
@@ -41,9 +37,27 @@ $(document).ready(function() {
             onUpdate: function(el) {
                 el.innerHTML = ++this.keystrokes + " Keystrokes";
             }
-        }], // Another optional usage, with a custom status bar item that counts keystrokes
-        styleSelectedText: false,
+        }],
+        styleSelectedText: true,
         tabSize: 4,
         toolbar: ["bold", "italic", "heading", "|", "quote", "unordered-list", "ordered-list", "|", "preview", "side-by-side", "fullscreen", "|", "guide"],
     });
-});
+}
+
+function checkValidityMarkdown(form) {
+    let textarea = form.find('textarea');
+    console.log(length);
+
+    if (textarea.val().length < maxlength && textarea.val().length > minlength) {
+        form.find('.CodeMirror').removeClass('border-danger');
+        return true;
+    }
+    else {
+        form.find('.CodeMirror').addClass('border-danger');
+        return false;
+    }
+}
+
+function getHTML(markdownText) {
+    return SimpleMDE.prototype.markdown(markdownText);
+}

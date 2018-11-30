@@ -9,4 +9,13 @@ public enum Role implements GrantedAuthority {
     public String getAuthority() {
         return name();
     }
+
+    public static boolean isExist(String role){
+        for (Role type : Role.values()){
+            if (type.name().equalsIgnoreCase(role))
+                return true;
+        }
+
+        return false;
+    }
 }
