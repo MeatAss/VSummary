@@ -1,14 +1,9 @@
 <#import "parts/common.ftl" as common>
-<#import  "parts/personalCard.ftl" as card>
+<#import "parts/personalCard.ftl" as card>
 
 <#assign headerContent>
-    <link rel="stylesheet" href="../static/styles/animateLoading.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
-
     <link rel="stylesheet" href="../static/styles/headerStyle.css">
     <script src="../static/js/navbarActions.js"></script>
-    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 
     <script src="../static/js/bootstrap.bundle.js"></script>
 

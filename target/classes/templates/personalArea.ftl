@@ -3,8 +3,6 @@
 <#import "parts/summariesTbody.ftl" as summariesTbody>
 
 <#assign headerContent>
-    <link rel="stylesheet" href="../static/styles/animateLoading.css">
-
     <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
 
     <link rel="stylesheet" href="../static/styles/headerStyle.css">
