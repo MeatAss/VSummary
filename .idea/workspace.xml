@@ -2,97 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6c21cec-9b83-4f22-a896-7ba9bfd0d06e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/FacebookUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/TwitterUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/VKontakteUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d9c5b46-bdb4-47b6-a169-00d9bf15307d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d9c5b46-bdb4-47b6-a169-00d9bf15307d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/FacebookSocialComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/FacebookSocialComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleSocialComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleSocialComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/TwitterSocialComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/TwitterSocialComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/VKontakteSocialComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/VKontakteSocialComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/WebSecurityComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/component/WebSecurityComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummariesSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummarySearchTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTagBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/SummarySearchTagBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/FacebookUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/SimpleUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SimpleUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Summaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/SummaryTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/TwitterUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/VKontakteUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/enums/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SimpleAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SimpleAuthentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SocialAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/interfaces/SocialAuthentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/FacebookUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/FacebookUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SimpleUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SimpleUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TwitterUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TwitterUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/VKontakteUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/VKontakteUserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/CreateSummariesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/headerActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/navbarActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/markdownEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/markdownEditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/common.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/component/FacebookSocialComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/component/FacebookSocialComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/component/SimpleSocialComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/component/SimpleSocialComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/component/TwitterSocialComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/component/TwitterSocialComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/component/VKontakteSocialComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/component/VKontakteSocialComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/component/WebSecurityComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/component/WebSecurityComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/config/MvcConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/config/MvcConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/config/WebSecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/AuthenticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/CreateSummariesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummariesSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummarySearchTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummarySearchTagBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/SummarySearchTagBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/FacebookUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/SimpleUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/Summaries.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/SummaryTags.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/TwitterUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/VKontakteUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/interfaces/SimpleAuthentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/interfaces/SimpleAuthentication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/interfaces/SocialAuthentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/interfaces/SocialAuthentication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/FacebookUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/FacebookUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SimpleUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SimpleUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummariesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummariesRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummariesSearchRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummariesSearchRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummaryTagsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummaryTagsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/TwitterUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/TwitterUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/VKontakteUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/VKontakteUserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/AuthenticationService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/AuthenticationService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/AuthenticationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/AuthenticationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/CreateSummariesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/personalArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/personalArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/PersonalAreaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/PersonalAreaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Summaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Summaries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/PersonalAreaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/PersonalAreaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/SummariesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/SummariesService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/createSummaryApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/createSummaryApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/headerActions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/js/markdownEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/markdownEditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/createSummary.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/createSummary.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/common.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/common.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/parts/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/parts/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/personalArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/personalArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/personalAreaWebService.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/personalAreaWebService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/personalArea.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/personalArea.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,7 +68,7 @@
     <session id="-251275044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.25" value="1" />
@@ -148,13 +78,13 @@
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="3" />
-          <entry key="project.open.time.42" value="2" />
+          <entry key="project.open.time.42" value="3" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.47" value="4" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.56" value="1" />
@@ -165,7 +95,7 @@
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.84" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -173,21 +103,23 @@
           <entry key="class" value="61" />
           <entry key="css" value="13" />
           <entry key="facebook_users" value="9" />
-          <entry key="ftl" value="76" />
+          <entry key="ftl" value="80" />
           <entry key="hibernate_sequence" value="3" />
-          <entry key="java" value="510" />
-          <entry key="js" value="65" />
+          <entry key="java" value="534" />
+          <entry key="js" value="73" />
+          <entry key="json" value="1" />
           <entry key="mustache" value="18" />
           <entry key="properties" value="19" />
           <entry key="simple_users" value="3" />
           <entry key="sql" value="1" />
-          <entry key="summaries" value="21" />
-          <entry key="summary_tags" value="8" />
+          <entry key="summaries" value="24" />
+          <entry key="summariesTbody" value="1" />
+          <entry key="summary_tags" value="9" />
           <entry key="tags" value="17" />
           <entry key="twitter_users" value="5" />
           <entry key="user_role" value="16" />
           <entry key="user_type" value="4" />
-          <entry key="users" value="59" />
+          <entry key="users" value="60" />
           <entry key="vkontakte_users" value="2" />
           <entry key="xml" value="22" />
         </counts>
@@ -196,11 +128,12 @@
         <counts>
           <entry key="CLASS" value="61" />
           <entry key="CSS" value="13" />
-          <entry key="Database Element" value="147" />
-          <entry key="FTL" value="74" />
+          <entry key="Database Element" value="152" />
+          <entry key="FTL" value="79" />
           <entry key="HTML" value="18" />
-          <entry key="JAVA" value="510" />
-          <entry key="JavaScript" value="65" />
+          <entry key="JAVA" value="534" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="73" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Properties" value="19" />
           <entry key="Scratch" value="1" />
@@ -212,9 +145,9 @@
           <entry key="cell" value="86" />
           <entry key="css" value="31" />
           <entry key="dummy" value="53" />
-          <entry key="ftl" value="5121" />
-          <entry key="java" value="20748" />
-          <entry key="js" value="4961" />
+          <entry key="ftl" value="5323" />
+          <entry key="java" value="22096" />
+          <entry key="js" value="5985" />
           <entry key="mustache" value="2510" />
           <entry key="properties" value="45" />
           <entry key="txt" value="13" />
@@ -224,10 +157,10 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="31" />
-          <entry key="FTL" value="5121" />
+          <entry key="FTL" value="5323" />
           <entry key="HTML" value="2510" />
-          <entry key="JAVA" value="20748" />
-          <entry key="JavaScript" value="4961" />
+          <entry key="JAVA" value="22096" />
+          <entry key="JavaScript" value="5985" />
           <entry key="PLAIN_TEXT" value="66" />
           <entry key="Properties" value="45" />
           <entry key="Scratch" value="86" />
@@ -315,10 +248,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-98">
-              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+            <state relative-caret-position="412">
+              <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -326,17 +262,65 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/personalArea.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+            <state relative-caret-position="119">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/TwoFieldsMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/summariesTbody.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="198" column="84" selection-start-line="198" selection-start-column="73" selection-end-line="198" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="74" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -350,10 +334,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="CSS File" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Gradle Kotlin DSL Settings" />
+        <option value="package.json" />
+        <option value="XSLT Stylesheet" />
       </list>
     </option>
   </component>
@@ -375,6 +362,7 @@
       <find>&lt;form</find>
       <find>allowAtxHeaderWithoutSpace</find>
       <find>a</find>
+      <find>originalUserId</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -383,11 +371,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/FacebookUserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/VKontakteUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/TwitterUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/VKontakteSocialComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/WebSecurityComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/TwitterSocialComponent.java" />
@@ -395,21 +378,17 @@
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/TwoFieldsMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/FacebookUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/Summaries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/navbarActions.js" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/CreateSummariesController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/FacebookSocialComponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/MvcConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AuthenticationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/summary.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/markdownEditor.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/personalCard.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleSocialComponent.java" />
@@ -422,17 +401,26 @@
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AdministratorAreaService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/administratorArea.js" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/FacebookUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/TwitterUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/VKontakteUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SimpleUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/updateSummary.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesNameSearchRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesNameSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/package.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/summariesTbody.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/personalArea.js" />
       </list>
     </option>
@@ -686,8 +674,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -699,7 +687,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543589416717" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543652291174" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -708,23 +696,23 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.23715416" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\java\VSummary\src\main\resources\static\js" />
-      <recent name="D:\java\VSummary\src\main\resources\static" />
-      <recent name="D:\java\VSummary\src\main\resources\static\styles" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Com.VSummary.repository" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\VSummary\src\main\resources\static\js" />
       <recent name="D:\java\VSummary\src\main\resources\static\styles" />
       <recent name="D:\java\VSummary\src\main\resources\templates" />
       <recent name="D:\java\VSummary\src\main\java\Com\VSummary\domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Com.VSummary.repository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\VSummary\src\main\resources\static\js" />
+      <recent name="D:\java\VSummary\src\main\resources\static" />
+      <recent name="D:\java\VSummary\src\main\resources\static\styles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -818,11 +806,13 @@
       <workItem from="1543487588960" duration="7366000" />
       <workItem from="1543515668483" duration="3970000" />
       <workItem from="1543561630976" duration="18471000" />
+      <workItem from="1543589860660" duration="13567000" />
+      <workItem from="1543644430467" duration="7771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455282000" />
+    <option name="totallyTimeSpent" value="476620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -837,7 +827,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20842217" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -850,7 +840,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49573562" weight="0.29826465" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49573562" visible="true" weight="0.29826465" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
@@ -884,15 +874,46 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java</url>
-          <line>25</line>
+          <line>43</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="summariesRepository.findAllByNameSummary(filter).get(0)" language="JAVA" />
+        <watch expression="userRepository.findById(Long.parseLong(&quot;79&quot;))" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>summariesRepository.findAllByNameSummary(filter).get(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>summariesRepository.findAllByNameSummary(filter).get(0).user</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>userRepository.findById(Long.parseLong(&quot;79&quot;))</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>userRepository.findById(79)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>summariesRepository.findAllByNameSummary(filter)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>optionalUser.get().getRoles()</expression-string>
         <language-id>JAVA</language-id>
@@ -918,26 +939,6 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>this.getId()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>principal.getId()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>optionalUser.get().getId()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>optionalUser.get().getRoles().contains(Role.ADMINISTRATOR)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="setValue">
       <expression>
@@ -948,106 +949,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summary_tags">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="571" selection-start-line="571" selection-end-line="571" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="16" column="58" lean-forward="true" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/bootstrap.bundle.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/twitter_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/tags">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryWebService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1142,23 +1047,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="22" column="37" lean-forward="true" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/SimpleSocialComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
           <caret line="72" column="41" lean-forward="true" selection-start-line="72" selection-start-column="41" selection-end-line="72" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1205,20 +1097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1230,16 +1108,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="12" column="79" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,9 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="701">
           <caret line="62" column="82" selection-start-line="62" selection-start-column="82" selection-end-line="62" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1284,10 +1149,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="429">
+          <caret line="49" column="4" selection-start-line="49" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="8" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summary_tags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="77" column="75" selection-start-line="77" selection-start-column="39" selection-end-line="77" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryWebService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="34" column="50" lean-forward="true" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesNameSearchRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="98" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/elasticsearch/SummariesNameSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/package.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/administratorArea.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesSearchRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1296,49 +1268,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="115" column="8" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="8" />
+        <state relative-caret-position="384">
+          <caret line="198" column="84" selection-start-line="198" selection-start-column="73" selection-end-line="198" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/administratorArea.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/TwoFieldsMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="42" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="42" />
+        <state relative-caret-position="136">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+        <state relative-caret-position="446">
+          <caret line="38" column="34" lean-forward="true" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+        <state relative-caret-position="497">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/summariesTbody.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="65" lean-forward="true" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/PersonalAreaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="115" column="21" selection-start-line="115" selection-start-column="21" selection-end-line="115" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/personalArea.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
         </state>
       </provider>
     </entry>

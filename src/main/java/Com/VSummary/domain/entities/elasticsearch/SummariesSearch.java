@@ -1,22 +1,18 @@
 package Com.VSummary.domain.entities.elasticsearch;
 
 import Com.VSummary.domain.entities.MySQL.Summaries;
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.elasticsearch.annotations.Document;
 
-import javax.persistence.Id;
-import java.util.UUID;
-
 @Document(indexName = "summaries_search", type = "summaries")
-@Data
-public class SummariesSearch {
-
-    @Id
-    private String id;
-
-    private String idSummary;
-
-    private String name;
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class SummariesSearch extends SummariesNameSearch {
 
     private String shortDescription;
 
@@ -24,13 +20,9 @@ public class SummariesSearch {
 
     private String text;
 
-    public SummariesSearch() {
-    }
-
     public SummariesSearch(Summaries summaries) {
-        id = UUID.randomUUID().toString();
-        idSummary = String.valueOf(summaries.getId());
-        name = summaries.getNameSummary();
+        super(summaries);
+
         shortDescription = summaries.getShortDescription();
         specialtyNumber = summaries.getSpecialtyNumber();
         text = summaries.getTextSummary();

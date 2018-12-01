@@ -1,5 +1,6 @@
 <#import "parts/common.ftl" as common>
-<#import  "parts/personalCard.ftl" as card>
+<#import "parts/personalCard.ftl" as card>
+<#import "parts/summariesTbody.ftl" as summariesTbody>
 
 <#assign headerContent>
     <link rel="stylesheet" href="../static/styles/animateLoading.css">
@@ -16,6 +17,9 @@
     <link rel="stylesheet" href="../static/styles/bootstrap-editable.css">
     <script src="../static/js/bootstrap-editiable.min.js"></script>
     <script src="../static/js/personalArea.js"></script>
+
+    <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+    <script src="../static/js/personalAreaWebService.js"></script>
 
     <style>
         img {
@@ -45,19 +49,20 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Filter</span>
                         </div>
-                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        <input type="text" class="form-control" id="filter_input" aria-describedby="basic-addon3" maxlength="100">
 
                         <div class="input-group-prepend ml-4">
                             <span class="input-group-text">Sorting</span>
                         </div>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div id="dropdownSortingArea" class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownSorting"
+                                    value="0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Standard
                             </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item active" href="">Standard</a>
-                                <a class="dropdown-item" href="">Alphabetically</a>
-                                <a class="dropdown-item" href="">Not alphabetically</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownSorting">
+                                <a class="dropdown-item active" href="#" value="0">Standard</a>
+                                <a class="dropdown-item" href="#" value="1">Alphabetically</a>
+                                <a class="dropdown-item" href="#" value="-1">Not alphabetically</a>
                             </div>
                         </div>
 
@@ -78,23 +83,8 @@
                     <th scope="col">Delete</th>
                 </tr>
                 </thead>
-                <tbody>
-                    <#list summaries as summary>
-                    <tr id="${summary.getId()}">
-                        <th scope="row">${summary.getNameSummary()}</th>
-                        <td>${summary.getShortDescription()}</td>
-                        <td>
-                            <form method="post" action="/updateSummary">
-                                <input name="userId" type="hidden" value="${originalUserId}">
-                                <input name="summaryId" type="hidden" value="${summary.getId()}">
-                                <i class="fas fa-pencil-alt" onclick="updateSummary(this)"></i>
-                            </form>
-                        </td>
-                        <td>
-                            <i class="far fa-trash-alt" onclick="deleteSummary(this)"></i>
-                        </td>
-                    </tr>
-                    </#list>
+                <tbody value="${originalUserId}">
+                    <@summariesTbody.tbody summaries=summaries originalUserId=originalUserId/>
                 </tbody>
             </table>
         </div>

@@ -5,8 +5,9 @@ $( document ).ready(function () {
 function connect() {
     socket = new SockJS('/gs-websocket');
     stompClient = Stomp.over(socket);
+    stompClient.debug = null;
     stompClient.connect({}, function (frame) {
-        stompClient.subscribe('personalArea/filter', function(results) {
+        stompClient.subscribe('/user/queue/personalArea/filter', function(results) {
             showFiltredSummaries(JSON.parse(results.body));
         });
     });

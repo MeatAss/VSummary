@@ -19,7 +19,7 @@ public class Summaries implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private User user;
@@ -45,6 +45,6 @@ public class Summaries implements Serializable {
 
     @Transient
     public String getStringSummaryTags() {
-        return summaryTags.stream().map(tag -> tag.getTag()).collect(Collectors.joining(" "));
+        return summaryTags.stream().map(SummaryTags::getTag).collect(Collectors.joining(" "));
     }
 }

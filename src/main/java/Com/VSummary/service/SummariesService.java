@@ -4,12 +4,10 @@ import Com.VSummary.domain.*;
 import Com.VSummary.domain.entities.MySQL.Summaries;
 import Com.VSummary.domain.entities.MySQL.SummaryTags;
 import Com.VSummary.domain.entities.MySQL.User;
+import Com.VSummary.domain.entities.elasticsearch.SummariesNameSearch;
 import Com.VSummary.domain.entities.elasticsearch.SummariesSearch;
 import Com.VSummary.domain.entities.elasticsearch.SummarySearchTag;
-import Com.VSummary.repository.SummariesRepository;
-import Com.VSummary.repository.SummariesSearchRepository;
-import Com.VSummary.repository.SummaryTagsRepository;
-import Com.VSummary.repository.UserRepository;
+import Com.VSummary.repository.*;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.common.unit.Fuzziness;
 import org.elasticsearch.index.query.MultiMatchQueryBuilder;
@@ -26,12 +24,10 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.core.query.IndexQuery;
 import org.springframework.data.elasticsearch.core.query.NativeSearchQueryBuilder;
 import org.springframework.data.elasticsearch.core.query.SearchQuery;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.scheduling.annotation.EnableAsync;
-import org.springframework.social.support.URIBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.multipart.MultipartFile;
@@ -53,6 +49,9 @@ public class SummariesService {
 
     @Autowired
     private SummariesSearchRepository summariesSearchRepository;
+
+    @Autowired
+    private SummariesNameSearchRepository summariesNameSearchRepository;
 
     @Autowired
     private SimpMessagingTemplate simpMessagingTemplate;
@@ -77,12 +76,12 @@ public class SummariesService {
         if (!userRepository.findById(userId).isPresent())
             return "redirect: /login";
 
-        model = configureUpdateSummaryModel(model, summary.get(), userId);
+        configureUpdateSummaryModel(model, summary.get(), userId);
 
         return "updateSummary";
     }
 
-    private Model configureUpdateSummaryModel(Model model, Summaries summaries, long userId) {
+    private void configureUpdateSummaryModel(Model model, Summaries summaries, long userId) {
         model.addAttribute("originalUserId", userId);
         model.addAttribute("summaryId", summaries.getId());
         model.addAttribute("nameSummary", summaries.getNameSummary());
@@ -90,8 +89,6 @@ public class SummariesService {
         model.addAttribute("specialtyNumber", summaries.getSpecialtyNumber());
         model.addAttribute("summaryTags", summaries.getStringSummaryTags());
         model.addAttribute("textSummary", summaries.getTextSummary());
-
-        return model;
     }
 
     public ResponseEntity<String> deleteSummary(long summaryId) {
@@ -123,6 +120,8 @@ public class SummariesService {
         summary.setUser(user);
 
         summariesRepository.save(summary);
+        summariesSearchRepository.save(new SummariesSearch(summary));
+        summariesNameSearchRepository.save(new SummariesNameSearch(summary));
     }
 
     private List<SummaryTags> saveTags(Set<String> tags) {

@@ -62,7 +62,6 @@ function sendData() {
 
     $.ajax({
         type: 'POST',
-        // dataType: 'json',
         contentType: 'application/json',
         url: url,
         data: JSON.stringify(spis),
