@@ -32,7 +32,17 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <h5 class="card-title">${summary.nameSummary}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">${summary.shortDescription}</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            ${summary.shortDescription} | Speciality ${summary.specialtyNumber}
+                            <#if isAuthenticate>
+                                <div class="rating-area d-inline float-right">
+                                    <#list 1..5 as i>
+                                        <i class="fa-star ${(i <= summary.avgRatings)?string("fas","far")}" value="${i}"></i>
+                                    </#list>
+                                </div>
+                            </#if>
+                        </h6>
+                        <hr align="center" size="2"/>
                         <div class="card-text markdown_text">${summary.textSummary}</div>
                         <a href="#" class="card-link">Подробнее</a>
                     </li>

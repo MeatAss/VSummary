@@ -9,7 +9,30 @@ $(document).ready(() => {
     });
 
     $('.comment_like').on('click', likeClick);
+
+    $('.rating-area i').on('click', ratingClick);
 });
+
+function ratingClick(event) {
+    $.ajax({
+        type: 'POST',
+        url: 'main/addRating',
+        data: {
+            "rating" : $(event.currentTarget).attr('value'),
+            "summaryId" : $($(event.currentTarget).closest('.summary-area')).attr('value')
+        }
+    });
+}
+
+function changeRating(object) {
+    rating = $('#summary-area' + object.summaryId + ' .rating-area i');
+
+    rating.each((i, item) => {
+        changeClass($(item), 'fas', 'far');
+        if (i < object.avgRatings)
+            changeClass($(item), 'far', 'fas');
+    });
+}
 
 function likeClick(event) {
     $.ajax({

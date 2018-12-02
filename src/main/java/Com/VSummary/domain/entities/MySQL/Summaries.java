@@ -52,8 +52,12 @@ public class Summaries implements Serializable {
 //            inverseJoinColumns = { @JoinColumn(name = "comment_id") }
 //    )
     @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "comment_id")
+    @JoinColumn(name = "comment_id", nullable = false)
     private Set<Comments> comments = new TreeSet<>();
+
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinColumn(name = "comment_id", nullable = false)
+    private Set<Rating> ratings = new TreeSet<>();
 
     @Transient
     public String getStringSummaryTags() {

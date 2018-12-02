@@ -10,6 +10,9 @@ function connect() {
         stompClient.subscribe('/topic/main/newComment', function(results) {
             addComment(JSON.parse(results.body));
         });
+        stompClient.subscribe('/topic/main/updateRating', function(results) {
+            changeRating(JSON.parse(results.body));
+        });
     });
 }
 

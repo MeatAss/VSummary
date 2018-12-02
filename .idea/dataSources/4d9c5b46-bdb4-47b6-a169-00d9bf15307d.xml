@@ -1128,349 +1128,388 @@
     <table id="284" parent="9" name="likes">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="285" parent="9" name="simple_users">
+    <table id="285" parent="9" name="rating">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="286" parent="9" name="summaries">
+    <table id="286" parent="9" name="simple_users">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="287" parent="9" name="summary_tags">
+    <table id="287" parent="9" name="summaries">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="288" parent="9" name="tags">
+    <table id="288" parent="9" name="summary_tags">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="289" parent="9" name="twitter_users">
+    <table id="289" parent="9" name="tags">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="290" parent="9" name="user_role">
+    <table id="290" parent="9" name="twitter_users">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="291" parent="9" name="user_type">
+    <table id="291" parent="9" name="user_role">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="292" parent="9" name="users">
+    <table id="292" parent="9" name="user_type">
       <Engine>MyISAM</Engine>
     </table>
-    <table id="293" parent="9" name="vkontakte_users">
+    <table id="293" parent="9" name="users">
       <Engine>MyISAM</Engine>
     </table>
-    <column id="294" parent="281" name="id">
+    <table id="294" parent="9" name="vkontakte_users">
+      <Engine>MyISAM</Engine>
+    </table>
+    <column id="295" parent="281" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="295" parent="281" name="message">
+    <column id="296" parent="281" name="message">
       <Position>2</Position>
       <DataType>varchar(500)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="296" parent="281" name="user_id">
+    <column id="297" parent="281" name="user_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="281" name="comment_id">
+    <column id="298" parent="281" name="comment_id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="298" parent="281" name="FK8omq0tc18jd43bu5tjh6jvraq">
+    <index id="299" parent="281" name="FK8omq0tc18jd43bu5tjh6jvraq">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="299" parent="281" name="FK8muxjnpij4sn4mpp3iynhyloe">
+    <index id="300" parent="281" name="FK8muxjnpij4sn4mpp3iynhyloe">
       <ColNames>comment_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="300" parent="281" name="PRIMARY">
+    <key id="301" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="301" parent="282" name="token">
+    <column id="302" parent="282" name="token">
       <Position>1</Position>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="282" name="user_id">
+    <column id="303" parent="282" name="user_id">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="282" name="id">
+    <column id="304" parent="282" name="id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="304" parent="282" name="PRIMARY">
+    <key id="305" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="305" parent="283" name="next_val">
+    <column id="306" parent="283" name="next_val">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="306" parent="284" name="id">
+    <column id="307" parent="284" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="284" name="user_id">
+    <column id="308" parent="284" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="284" name="comment_id">
+    <column id="309" parent="284" name="comment_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="309" parent="284" name="FKnvx9seeqqyy71bij291pwiwrg">
+    <index id="310" parent="284" name="FKnvx9seeqqyy71bij291pwiwrg">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="310" parent="284" name="FKe4guax66lb963pf27kvm7ikik">
+    <index id="311" parent="284" name="FKe4guax66lb963pf27kvm7ikik">
       <ColNames>comment_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="311" parent="284" name="PRIMARY">
+    <key id="312" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="312" parent="285" name="activation_code">
+    <column id="313" parent="285" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="314" parent="285" name="mark">
+      <Position>2</Position>
+      <DataType>tinyint(4)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="315" parent="285" name="user_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="316" parent="285" name="comment_id">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="317" parent="285" name="FKf68lgbsbxl310n0jifwpfqgfh">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="318" parent="285" name="FKojamthr4p0klx26e2bp1sitgw">
+      <ColNames>comment_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="319" parent="285" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="320" parent="286" name="activation_code">
       <Position>1</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="285" name="email">
+    <column id="321" parent="286" name="email">
       <Position>2</Position>
       <DataType>varchar(64)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="285" name="id">
+    <column id="322" parent="286" name="id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="315" parent="285" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="316" parent="286" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="317" parent="286" name="name_summary">
-      <Position>2</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="318" parent="286" name="short_description">
-      <Position>3</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="319" parent="286" name="specialty_number">
-      <Position>4</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="320" parent="286" name="activation_code">
-      <Position>5</Position>
-      <DataType>longtext|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="321" parent="286" name="user_id">
-      <Position>6</Position>
-      <DataType>bigint(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="322" parent="286" name="FKpev8ct9p3antqe0gtr9pbpjyd">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
     <key id="323" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="324" parent="287" name="summary_id">
+    <column id="324" parent="287" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="325" parent="287" name="summary_tags">
+    <column id="325" parent="287" name="name_summary">
+      <Position>2</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="287" name="short_description">
+      <Position>3</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="327" parent="287" name="specialty_number">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="328" parent="287" name="activation_code">
+      <Position>5</Position>
+      <DataType>longtext|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="329" parent="287" name="user_id">
+      <Position>6</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="330" parent="287" name="FKpev8ct9p3antqe0gtr9pbpjyd">
+      <ColNames>user_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="331" parent="287" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="332" parent="288" name="summary_id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="333" parent="288" name="summary_tags">
       <Position>2</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="326" parent="287" name="FKhn0ye4ftyc4rxua3o0xnoin49">
+    <index id="334" parent="288" name="FKhn0ye4ftyc4rxua3o0xnoin49">
       <ColNames>summary_tags</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="327" parent="287" name="PRIMARY">
+    <key id="335" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>summary_id
 summary_tags</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="328" parent="288" name="id">
+    <column id="336" parent="289" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="288" name="tag">
+    <column id="337" parent="289" name="tag">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="330" parent="288" name="UKc3yryiciv2h8794kloo3giic">
+    <index id="338" parent="289" name="UKc3yryiciv2h8794kloo3giic">
       <ColNames>tag</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="331" parent="288" name="PRIMARY">
+    <key id="339" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="332" parent="288" name="UKc3yryiciv2h8794kloo3giic">
+    <key id="340" parent="289" name="UKc3yryiciv2h8794kloo3giic">
       <ColNames>tag</ColNames>
       <UnderlyingIndexName>UKc3yryiciv2h8794kloo3giic</UnderlyingIndexName>
     </key>
-    <column id="333" parent="289" name="oauth_token">
+    <column id="341" parent="290" name="oauth_token">
       <Position>1</Position>
       <DataType>varchar(80)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="289" name="oauth_token_secret">
+    <column id="342" parent="290" name="oauth_token_secret">
       <Position>2</Position>
       <DataType>varchar(80)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="289" name="profile_id">
+    <column id="343" parent="290" name="profile_id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="336" parent="289" name="id">
+    <column id="344" parent="290" name="id">
       <Position>4</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="337" parent="289" name="PRIMARY">
+    <key id="345" parent="290" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="338" parent="290" name="user_id">
+    <column id="346" parent="291" name="user_id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="339" parent="290" name="roles">
+    <column id="347" parent="291" name="roles">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="340" parent="290" name="FKj345gk1bovqvfame88rcx7yyx">
+    <index id="348" parent="291" name="FKj345gk1bovqvfame88rcx7yyx">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="341" parent="291" name="user_id">
+    <column id="349" parent="292" name="user_id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="291" name="types">
+    <column id="350" parent="292" name="types">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="343" parent="291" name="FKgx1oa4kbhp6v2h4fkcs86782y">
+    <index id="351" parent="292" name="FKgx1oa4kbhp6v2h4fkcs86782y">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="344" parent="292" name="id">
+    <column id="352" parent="293" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="292" name="active">
+    <column id="353" parent="293" name="active">
       <Position>2</Position>
       <DataType>bit(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="292" name="given_name">
+    <column id="354" parent="293" name="given_name">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="292" name="user_login">
+    <column id="355" parent="293" name="user_login">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="348" parent="292" name="password">
+    <column id="356" parent="293" name="password">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="292" name="second_name">
+    <column id="357" parent="293" name="second_name">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="350" parent="292" name="user_enable">
+    <column id="358" parent="293" name="user_enable">
       <Position>7</Position>
       <DataType>bit(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="351" parent="292" name="PRIMARY">
+    <key id="359" parent="293" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="352" parent="293" name="token">
+    <column id="360" parent="294" name="token">
       <Position>1</Position>
       <DataType>varchar(200)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="353" parent="293" name="user_id">
+    <column id="361" parent="294" name="user_id">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="354" parent="293" name="id">
+    <column id="362" parent="294" name="id">
       <Position>3</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="355" parent="293" name="PRIMARY">
+    <key id="363" parent="294" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

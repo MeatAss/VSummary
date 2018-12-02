@@ -1,11 +1,9 @@
 package Com.VSummary.service;
 
-import Com.VSummary.domain.entities.MySQL.Comments;
-import Com.VSummary.domain.entities.MySQL.Likes;
-import Com.VSummary.domain.entities.MySQL.Summaries;
-import Com.VSummary.domain.entities.MySQL.User;
+import Com.VSummary.domain.entities.MySQL.*;
 import Com.VSummary.repository.CommentsRepository;
 import Com.VSummary.repository.LikesRepository;
+import Com.VSummary.repository.RatingRepository;
 import Com.VSummary.repository.SummariesRepository;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +29,9 @@ public class MainService {
     @Autowired
     private LikesRepository likesRepository;
 
+    @Autowired
+    private RatingRepository ratingRepository;
+
     public String main(User user, Model model) {
         model.addAttribute("isAuthenticate", !(user == null));
         model.addAttribute("summaries", createListSummaries(user, summariesRepository.findAll()));
@@ -53,11 +54,19 @@ public class MainService {
 
         mapSummary.put("id", summary.getId());
         mapSummary.put("nameSummary", summary.getNameSummary());
+        mapSummary.put("specialtyNumber", summary.getSpecialtyNumber());
         mapSummary.put("shortDescription", summary.getShortDescription());
         mapSummary.put("textSummary", summary.getTextSummary());
 
-        if (user != null)
+        if (user != null) {
+            mapSummary.put("avgRatings", Math.round(
+                    summary.getRatings().stream()
+                            .mapToDouble(Rating::getMark)
+                            .average()
+                            .orElse(0)
+            ));
             mapSummary.put("comments", createListComments(summary.getComments(), user));
+        }
 
         return mapSummary;
     }
@@ -140,5 +149,44 @@ public class MainService {
                         .toString(),
                 HttpStatus.OK
         );
+    }
+
+    public HttpStatus addRating(User user, long summaryId, byte ratingNumber) {
+        Optional<Summaries> summaries = summariesRepository.findById(summaryId);
+        if ((!summaries.isPresent()) || !(ratingNumber >= Rating.minMark && ratingNumber <= Rating.maxMark))
+            return HttpStatus.BAD_REQUEST;
+
+        Set<Rating> ratings = summaries.get().getRatings();
+        Rating newRating = new Rating(user, ratingNumber);
+
+        boolean isRemove = false;
+
+        if (ratings.contains(newRating)){
+            Rating updateRating = ratings.stream().filter(like -> like.equals(newRating)).findFirst().get();
+            updateRating.setMark(ratingNumber);
+            summariesRepository.save(summaries.get());
+        }
+        else {
+            ratings.add(newRating);
+            summaries.get().setRatings(ratings);
+
+            summariesRepository.save(summaries.get());
+        }
+
+        simpMessagingTemplate.convertAndSend(
+                "/topic/main/updateRating",
+                new JSONObject()
+                        .put("isRemove", isRemove)
+                        .put("summaryId", summaryId)
+                        .put("avgRatings", Math.round(
+                                ratings.stream()
+                                        .mapToDouble(Rating::getMark)
+                                        .average()
+                                        .orElse(0))
+                        )
+                        .toString()
+        );
+
+        return HttpStatus.OK;
     }
 }

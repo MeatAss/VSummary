@@ -26,13 +26,30 @@ public class MainController {
 
     @PostMapping("main/addComment")
     @ResponseBody
-    public HttpStatus addComment(@AuthenticationPrincipal User user, @RequestParam("summaryId") long summaryId, @RequestParam("comment") String comment) throws Exception {
+    public HttpStatus addComment(
+            @AuthenticationPrincipal User user,
+            @RequestParam("summaryId") long summaryId,
+            @RequestParam("comment") String comment
+    ) throws Exception {
         return mainService.addComment(user, summaryId, comment);
     }
 
     @PostMapping("main/addLike")
     @ResponseBody
-    public ResponseEntity<String> addLike(@AuthenticationPrincipal User user, @RequestParam("commentId") long commentId) throws Exception {
+    public ResponseEntity<String> addLike(
+            @AuthenticationPrincipal User user,
+            @RequestParam("commentId") long commentId
+    ) throws Exception {
         return mainService.addLike(user, commentId);
+    }
+
+    @PostMapping("main/addRating")
+    @ResponseBody
+    public HttpStatus addRating(
+            @AuthenticationPrincipal User user,
+            @RequestParam("summaryId") long summaryId,
+            @RequestParam("rating") byte ratingNumber
+    ) throws Exception {
+        return mainService.addRating(user, summaryId, ratingNumber);
     }
 }
