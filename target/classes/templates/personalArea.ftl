@@ -4,20 +4,19 @@
 
 <#assign headerContent>
     <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
+    <script src="../static/js/personalAreaWebService.js"></script>
 
     <link rel="stylesheet" href="../static/styles/headerStyle.css">
     <script src="../static/js/navbarActions.js"></script>
+
     <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
     <script src="../static/js/markdownEditor.js"></script>
 
     <script src="../static/js/bootstrap.bundle.js"></script>
-
     <link rel="stylesheet" href="../static/styles/bootstrap-editable.css">
     <script src="../static/js/bootstrap-editiable.min.js"></script>
     <script src="../static/js/personalArea.js"></script>
-
-    <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
-    <script src="../static/js/personalAreaWebService.js"></script>
 
     <style>
         img {

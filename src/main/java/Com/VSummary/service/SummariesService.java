@@ -124,7 +124,7 @@ public class SummariesService {
         summariesNameSearchRepository.save(new SummariesNameSearch(summary));
     }
 
-    private List<SummaryTags> saveTags(Set<String> tags) {
+    private Set<SummaryTags> saveTags(Set<String> tags) {
         Set<String> ignoreCaseTags = new TreeSet<>(String::compareToIgnoreCase);
         ignoreCaseTags.addAll(tags);
 

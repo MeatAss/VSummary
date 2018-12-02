@@ -6,7 +6,8 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 @Entity
@@ -33,18 +34,41 @@ public class Summaries implements Serializable {
     @Column(name = "specialty_number", length = 50)
     private String specialtyNumber;
 
-    @Column(name = "summary_tags")
-    @ElementCollection(targetClass = SummaryTags.class, fetch = FetchType.EAGER)
-    @CollectionTable(name = "summary_tags", joinColumns = @JoinColumn(name = "tag_id"))
-    @Enumerated(EnumType.ORDINAL)
-    private List<SummaryTags> summaryTags;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "summary_tags",
+            joinColumns = { @JoinColumn(name = "summary_id") },
+            inverseJoinColumns = { @JoinColumn(name = "summary_tags") })
+    private Set<SummaryTags> summaryTags = new TreeSet<>();
 
     @Lob
     @Column(name = "activation_code", length = 50)
     private String textSummary;
+
+//    @ManyToMany(fetch = FetchType.EAGER)
+//    @JoinTable(
+//            name = "summary_comments",
+//            joinColumns = { @JoinColumn(name = "summary_id") },
+//            inverseJoinColumns = { @JoinColumn(name = "comment_id") }
+//    )
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "comment_id")
+    private Set<Comments> comments = new TreeSet<>();
 
     @Transient
     public String getStringSummaryTags() {
         return summaryTags.stream().map(SummaryTags::getTag).collect(Collectors.joining(" "));
     }
 }
+
+//    @ManyToMany(fetch = FetchType.EAGER)
+////    @JoinColumn(name = "summary_id", nullable = false)
+//    @JoinTable(
+//            name = "summary_tags",
+//            joinColumns = @JoinColumn(name = "summaries_id"),
+//            foreignKey = @ForeignKey(name = "summary_id"),
+//            inverseJoinColumns = @JoinColumn(name = "summary_tags"),
+//            inverseForeignKey = @ForeignKey(name = "tags_id")
+//    )
+//    @OnDelete(action = OnDeleteAction.CASCADE)
+//    private Set<SummaryTags> summaryTags;

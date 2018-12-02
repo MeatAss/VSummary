@@ -1,51 +1,38 @@
 package Com.VSummary.controller;
 
-import Com.VSummary.domain.entities.MySQL.Summaries;
-import Com.VSummary.domain.entities.MySQL.SummaryTags;
-import Com.VSummary.domain.entities.elasticsearch.SummariesNameSearch;
-import Com.VSummary.domain.entities.elasticsearch.SummariesSearch;
-import Com.VSummary.repository.SummariesNameSearchRepository;
-import Com.VSummary.repository.SummariesRepository;
-import Com.VSummary.repository.SummariesSearchRepository;
-import Com.VSummary.repository.SummaryTagsRepository;
+import Com.VSummary.domain.entities.MySQL.User;
+import Com.VSummary.service.MainService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MainController {
 
     @Autowired
-    private SummariesRepository summariesRepository;
-
-//    @Autowired
-//    private SummariesSearchRepository summariesSearchRepository;
-//
-//    @Autowired
-//    private SummariesNameSearchRepository summariesNameSearchRepository;
+    private MainService mainService;
 
     @GetMapping("/main")
-    public String main(Model model) {
-//        List<Summaries> all = summariesRepository.findAll();
-//        List<SummariesSearch> all2 = new ArrayList<>();
-//        List<SummariesNameSearch> all3 = new ArrayList<>();
-//
-//        all.forEach(item -> {
-//            all2.add(new SummariesSearch(item));
-//        });
-//        all2.forEach(item -> {
-//            all3.add(new SummariesNameSearch(item.getId(), item.getName()));
-//        });
-//
-//        summariesSearchRepository.saveAll(all2);
-//        summariesNameSearchRepository.saveAll(all3);
+    public String main(@AuthenticationPrincipal User user, Model model) {
+        return mainService.main(user, model);
+    }
 
-        model.addAttribute("summaries", summariesRepository.findAll());
+    @PostMapping("main/addComment")
+    @ResponseBody
+    public HttpStatus addComment(@AuthenticationPrincipal User user, @RequestParam("summaryId") long summaryId, @RequestParam("comment") String comment) throws Exception {
+        return mainService.addComment(user, summaryId, comment);
+    }
 
-        return "main";
+    @PostMapping("main/addLike")
+    @ResponseBody
+    public ResponseEntity<String> addLike(@AuthenticationPrincipal User user, @RequestParam("commentId") long commentId) throws Exception {
+        return mainService.addLike(user, commentId);
     }
 }
