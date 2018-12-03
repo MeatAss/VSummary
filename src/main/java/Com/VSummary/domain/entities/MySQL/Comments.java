@@ -5,6 +5,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -29,6 +30,8 @@ public class Comments {
     @JoinColumn(name = "comment_id", nullable = false)
     private Set<Likes> likes = new TreeSet<>();
 
+    @Column(name = "comment_timestamp", nullable = false)
+    private Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
     public Comments(String message, User user) {
         this.message = message;

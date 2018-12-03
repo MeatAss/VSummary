@@ -14,7 +14,7 @@
 
 <@common.common header=headerContent>
     <#include "parts/navbar.ftl">
-    <div id="personalAreaCards" class="w-75 mr-auto ml-auto mt-4 p-3">
+    <div id="personalAreaCards" class="w-75 mr-auto ml-auto mt-5 p-3 card">
         <table id="usersTable" class="table">
             <thead>
             <tr>

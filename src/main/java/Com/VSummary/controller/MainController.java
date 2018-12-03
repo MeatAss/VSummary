@@ -24,7 +24,7 @@ public class MainController {
         return mainService.main(user, model);
     }
 
-    @PostMapping("main/addComment")
+    @PostMapping("/main/addComment")
     @ResponseBody
     public HttpStatus addComment(
             @AuthenticationPrincipal User user,
@@ -34,7 +34,7 @@ public class MainController {
         return mainService.addComment(user, summaryId, comment);
     }
 
-    @PostMapping("main/addLike")
+    @PostMapping("/main/addLike")
     @ResponseBody
     public ResponseEntity<String> addLike(
             @AuthenticationPrincipal User user,
@@ -43,7 +43,7 @@ public class MainController {
         return mainService.addLike(user, commentId);
     }
 
-    @PostMapping("main/addRating")
+    @PostMapping("/main/addRating")
     @ResponseBody
     public HttpStatus addRating(
             @AuthenticationPrincipal User user,
@@ -51,5 +51,25 @@ public class MainController {
             @RequestParam("rating") byte ratingNumber
     ) throws Exception {
         return mainService.addRating(user, summaryId, ratingNumber);
+    }
+
+    @GetMapping("/main/showRecent")
+    public String showRecent(@AuthenticationPrincipal User user, Model model) throws Exception {
+        return mainService.showRecent(user, model);
+    }
+
+    @GetMapping("/main/showRated")
+    public String showRated(@AuthenticationPrincipal User user, Model model) throws Exception {
+        return mainService.showRated(user, model);
+    }
+
+    @GetMapping("/main/showTag")
+    public String showTag(@AuthenticationPrincipal User user, @RequestParam("tagId") long tagId,  Model model) throws Exception {
+        return mainService.showTag(user, tagId, model);
+    }
+
+    @GetMapping("/main/summary")
+    public String showSummary(@AuthenticationPrincipal User user, @RequestParam("summaryId") long summaryId, Model model) {
+        return mainService.showSummary(user, summaryId, model);
     }
 }

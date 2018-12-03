@@ -6,6 +6,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
@@ -25,14 +26,17 @@ public class Summaries implements Serializable {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private User user;
 
-    @Column(name = "name_summary", length = 100)
+    @Column(name = "name_summary", length = 100, nullable = false)
     private String nameSummary;
 
-    @Column(name = "short_description", length = 100)
+    @Column(name = "short_description", length = 100, nullable = false)
     private String shortDescription;
 
-    @Column(name = "specialty_number", length = 50)
+    @Column(name = "specialty_number", length = 50, nullable = false)
     private String specialtyNumber;
+
+    @Column(name = "summary_timestamp", nullable = false)
+    private Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
@@ -42,15 +46,9 @@ public class Summaries implements Serializable {
     private Set<SummaryTags> summaryTags = new TreeSet<>();
 
     @Lob
-    @Column(name = "activation_code", length = 50)
+    @Column(name = "summary_text", length = 2000, nullable = false)
     private String textSummary;
 
-//    @ManyToMany(fetch = FetchType.EAGER)
-//    @JoinTable(
-//            name = "summary_comments",
-//            joinColumns = { @JoinColumn(name = "summary_id") },
-//            inverseJoinColumns = { @JoinColumn(name = "comment_id") }
-//    )
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "comment_id", nullable = false)
     private Set<Comments> comments = new TreeSet<>();
@@ -64,6 +62,13 @@ public class Summaries implements Serializable {
         return summaryTags.stream().map(SummaryTags::getTag).collect(Collectors.joining(" "));
     }
 }
+
+//    @ManyToMany(fetch = FetchType.EAGER)
+//    @JoinTable(
+//            name = "summary_comments",
+//            joinColumns = { @JoinColumn(name = "summary_id") },
+//            inverseJoinColumns = { @JoinColumn(name = "comment_id") }
+//    )
 
 //    @ManyToMany(fetch = FetchType.EAGER)
 ////    @JoinColumn(name = "summary_id", nullable = false)

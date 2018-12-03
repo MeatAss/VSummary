@@ -4,16 +4,30 @@
     <list default="true" id="b6c21cec-9b83-4f22-a896-7ba9bfd0d06e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d9c5b46-bdb4-47b6-a169-00d9bf15307d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d9c5b46-bdb4-47b6-a169-00d9bf15307d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Comments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Likes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Likes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/TagsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TagsTestRepostiroty.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/mainWebService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/mainWebService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/config/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Comments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Comments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Likes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Likes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Summaries.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/Summaries.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/SummaryTags.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/domain/entities/MySQL/SummaryTags.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummariesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/repository/SummariesRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Com/VSummary/service/MainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Com/VSummary/service/MainService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/styles/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/styles/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.ftl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,7 +74,7 @@
     <session id="-251275044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="36" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.25" value="1" />
@@ -82,72 +96,73 @@
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.74" value="1" />
           <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.82" value="1" />
           <entry key="project.open.time.84" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="38" />
+          <entry key="project.opened" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="82" />
-          <entry key="comments" value="13" />
-          <entry key="css" value="14" />
+          <entry key="class" value="84" />
+          <entry key="comments" value="19" />
+          <entry key="css" value="21" />
           <entry key="facebook_users" value="9" />
-          <entry key="ftl" value="107" />
+          <entry key="ftl" value="121" />
           <entry key="hibernate_sequence" value="3" />
-          <entry key="java" value="604" />
-          <entry key="js" value="86" />
+          <entry key="java" value="620" />
+          <entry key="js" value="87" />
           <entry key="json" value="1" />
-          <entry key="likes" value="30" />
+          <entry key="likes" value="32" />
           <entry key="mustache" value="18" />
-          <entry key="properties" value="19" />
+          <entry key="properties" value="20" />
           <entry key="rating" value="9" />
           <entry key="simple_users" value="3" />
           <entry key="sql" value="1" />
-          <entry key="summaries" value="37" />
+          <entry key="summaries" value="44" />
           <entry key="summariesTbody" value="1" />
           <entry key="summaries_comments" value="1" />
           <entry key="summaries_summary_tags" value="4" />
           <entry key="summary_comments" value="1" />
-          <entry key="summary_tags" value="39" />
+          <entry key="summary_tags" value="44" />
           <entry key="tag_id" value="1" />
-          <entry key="tags" value="25" />
+          <entry key="tags" value="28" />
           <entry key="twitter_users" value="5" />
           <entry key="user_role" value="18" />
           <entry key="user_type" value="5" />
-          <entry key="users" value="60" />
+          <entry key="users" value="61" />
           <entry key="vkontakte_users" value="2" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="82" />
-          <entry key="CSS" value="14" />
-          <entry key="Database Element" value="265" />
-          <entry key="FTL" value="106" />
+          <entry key="CLASS" value="84" />
+          <entry key="CSS" value="21" />
+          <entry key="Database Element" value="289" />
+          <entry key="FTL" value="120" />
           <entry key="HTML" value="18" />
-          <entry key="JAVA" value="604" />
+          <entry key="JAVA" value="620" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="86" />
+          <entry key="JavaScript" value="87" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="19" />
+          <entry key="Properties" value="20" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cell" value="152" />
-          <entry key="css" value="31" />
+          <entry key="cell" value="162" />
+          <entry key="css" value="57" />
           <entry key="dummy" value="55" />
-          <entry key="ftl" value="6446" />
-          <entry key="java" value="25786" />
-          <entry key="js" value="7816" />
+          <entry key="ftl" value="7606" />
+          <entry key="java" value="28618" />
+          <entry key="js" value="9158" />
           <entry key="mustache" value="2510" />
           <entry key="properties" value="45" />
           <entry key="txt" value="13" />
@@ -156,14 +171,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="31" />
-          <entry key="FTL" value="6446" />
+          <entry key="CSS" value="57" />
+          <entry key="FTL" value="7606" />
           <entry key="HTML" value="2510" />
-          <entry key="JAVA" value="25786" />
-          <entry key="JavaScript" value="7816" />
+          <entry key="JAVA" value="28618" />
+          <entry key="JavaScript" value="9158" />
           <entry key="PLAIN_TEXT" value="68" />
           <entry key="Properties" value="45" />
-          <entry key="Scratch" value="152" />
+          <entry key="Scratch" value="162" />
           <entry key="XML" value="62" />
         </counts>
       </usages-collector>
@@ -248,49 +263,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/mainWebService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="55" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#877#878#0" expanded="true" />
@@ -301,13 +277,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="56" column="39" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="39" />
+            <state relative-caret-position="463">
+              <caret line="321" column="5" lean-forward="true" selection-start-line="321" selection-start-column="5" selection-end-line="321" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/cloudTags.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/cloudTags.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -318,23 +339,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="CSS File" />
         <option value="Gradle Kotlin DSL Settings" />
         <option value="package.json" />
         <option value="XSLT Stylesheet" />
         <option value="JavaScript File" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>elasticsearch.port</find>
-      <find>clustername</find>
-      <find>elasticsearch.host</find>
-      <find>spring-data-elasticsearch</find>
-      <find>stompClient</find>
       <find>spring-boot-starter-web</find>
       <find>strPos</find>
       <find>selectionStart</find>
@@ -350,6 +366,21 @@
       <find>Recipient's username</find>
       <find>simpMessagingTemplate</find>
       <find>comment_area</find>
+      <find>summary-tags</find>
+      <find>card</find>
+      <find>mainSummary</find>
+      <find>ajax</find>
+      <find>comments</find>
+      <find>comment_input</find>
+      <find>addComment</find>
+      <find>summary-more</find>
+      <find>&lt;div class=&quot;list-group-item card&quot;&gt;</find>
+      <find>summary-area</find>
+      <find>S</find>
+      <find>card-text</find>
+      <find>comment_like</find>
+      <find>con</find>
+      <find>cons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -358,15 +389,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/AdministratorAreaController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/AdministratorAreaService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/administratorArea.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/FacebookUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/TwitterUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/VKontakteUser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SimpleUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesNameSearchRepository.java" />
@@ -384,31 +406,40 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/units/summaryUnit.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/updateSummary.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/personalArea.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/SummariesService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CloudTags.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/TagsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TagsTestRepostiroty.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/CommentsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Сomments.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Comments.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Likes.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CountNameGroupby.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/LikesRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/main.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/mainIsAuthenticate.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/RatingRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" />
         <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Rating.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/mainWebService.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Likes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Comments.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/like.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/summary.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/mainSummary.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/summary.ftl" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/cloud.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/cloudTags.css" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/main.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/cloudTags.ftl" />
       </list>
     </option>
   </component>
@@ -468,8 +499,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -650,24 +681,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="parts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VSummary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="VSummary" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="units" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -683,7 +696,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543756217295" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543819679396" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -805,12 +818,13 @@
       <workItem from="1543561630976" duration="18471000" />
       <workItem from="1543589860660" duration="13567000" />
       <workItem from="1543644430467" duration="46825000" />
-      <workItem from="1543734926594" duration="21172000" />
+      <workItem from="1543734926594" duration="47985000" />
+      <workItem from="1543798008609" duration="19243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536846000" />
+    <option name="totallyTimeSpent" value="582902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,7 +839,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.21481876" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.21695095" />
       <window_info id="Structure" order="1" sideWeight="0.5007728" side_tool="true" weight="0.21268657" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -838,7 +852,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.4946695" visible="true" weight="0.29826465" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.4946695" visible="true" weight="0.29826465" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.329718" />
@@ -870,52 +884,48 @@
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>comment.getLikes().contains(new Likes(user))</expression-string>
+        <expression-string>Collections.max(counterMap.entrySet(), Comparator.comparingInt(Map.Entry::getValue))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comment.getLikes().contains(new User())</expression-string>
+        <expression-string>Collections.max(counterMap.entrySet(), Comparator.comparingInt(Map.Entry::getValue)).getKey()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comment.getLikes().contains(user)</expression-string>
+        <expression-string>Stream.of(counterMap).max(Comparator.comparingInt(value -&gt; value.values()))</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.util.stream.Stream</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((SummaryTags)tag).getTag()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>comment.getLikes()</expression-string>
+        <expression-string>((SummaryTags) tag).getTag()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new JSONObject().put(&quot;summaries&quot;, &quot;asd&quot;).toMap()</expression-string>
+        <expression-string>summaries.stream().map(Summaries::getSummaryTags).flatMap((Set&lt;SummaryTags&gt; x) -&gt; Arrays.stream(x.toArray())).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new JSONObject().put(&quot;summaries&quot;, &quot;asd&quot;)</expression-string>
+        <expression-string>summaries.stream().map(Summaries::getSummaryTags).flatMap((Set&lt;SummaryTags&gt; x) -&gt; Arrays.stream(x.toArray())).map(SummaryTags::new).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new JSONObject().put(&quot;summaries&quot;, &quot;asd&quot;).toString()</expression-string>
+        <expression-string>summaries.stream().map(Summaries::getSummaryTags).flatMap((Set&lt;SummaryTags&gt; x) -&gt; Arrays.stream((SummaryTags[])x.toArray())).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>new JSONObject()                         .put(&quot;summaries&quot;, &quot;asd&quot;)                         .toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>likesRepository.findAllCountNameGroupBy()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>likesRepository.delete(newLike)</expression-string>
+        <expression-string>summaries                 .stream()                 .map(Summaries::getSummaryTags).flatMap((Set&lt;SummaryTags&gt; x) -&gt; Arrays.stream((SummaryTags[])x.toArray())).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -929,122 +939,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/TagsTestRepostiroty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummaryTagsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/FacebookUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summary_comments" />
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries_comments" />
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summary_tags">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/personalAreaWebService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" lean-forward="true" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/units/summaryUnit.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/updateSummary.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="158" selection-start-line="1" selection-start-column="158" selection-end-line="1" selection-end-column="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryApp.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/createSummaryDragAndDrop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="142" column="51" selection-start-line="142" selection-start-column="51" selection-end-line="142" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/SummariesController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.9.RELEASE/spring-messaging-5.0.9.RELEASE.jar!/org/springframework/messaging/simp/config/AbstractMessageBrokerConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="187" column="46" selection-start-line="187" selection-start-column="46" selection-end-line="187" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/security.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/administratorArea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/PersonalAreaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1086,37 +980,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/comments">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/likes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CountNameGroupby.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CountNameGroupby.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/CloudTag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1128,29 +992,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/units/main.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/units/main.ftl" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/units/authentication.ftl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1165,16 +1013,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1201,9 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="74" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1211,38 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Likes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Comments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
@@ -1258,21 +1061,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/rating">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summaries">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/createSummary.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/units/summaryUnit.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/summary.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/FacebookSocialComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Likes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Comments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="75" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/summary.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/like.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/mainSummary.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/summary.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/mainWebService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="207">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
-    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/rating">
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/summary_tags">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4d9c5b46-bdb4-47b6-a169-00d9bf15307d/schema/vsummarydb/table/tags">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1281,18 +1216,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/Summaries.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="327">
+          <caret line="45" column="40" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/domain/entities/MySQL/SummaryTags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/cloudTags.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/repository/SummariesRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/component/WebSecurityComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        <state relative-caret-position="420">
+          <caret line="65" column="17" lean-forward="true" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#877#878#0" expanded="true" />
@@ -1301,20 +1286,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/administratorArea.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Com/VSummary/service/MainService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="39" />
+        <state relative-caret-position="463">
+          <caret line="321" column="5" lean-forward="true" selection-start-line="321" selection-start-column="5" selection-end-line="321" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/main.ftl">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/cloudTags.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+        <state relative-caret-position="34">
+          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
         </state>
       </provider>
     </entry>
